@@ -29,8 +29,8 @@ public class OreGeneration {
                     OreFeatureConfig.FillerBlockType.NETHER_ORE_REPLACEABLES,   // Block to replace
                     ModBlocks.NETHER_EPIDAXITE_ORE.get().defaultBlockState(),   // Ore to take its place
                     4,        // Max ores per vein
-                    8,      // Top of generation
-                    120,    // Bottom of generation
+                    8,      // Bottom of generation
+                    120,    // Top of generation
                     4);   // Max veins per chunk
         }
         // THE END =====================================================================================================
@@ -42,8 +42,8 @@ public class OreGeneration {
                     new BlockMatchRuleTest(Blocks.END_STONE),               // Block to replace
                     ModBlocks.END_NEPENTINE_ORE.get().defaultBlockState(),  // Ore to take its place
                     4,        // Max ores per vein
-                    8,      // Top of generation
-                    120,    // Bottom of generation
+                    8,      // Bottom of generation
+                    120,    // Top of generation
                     4);   // Max veins per chunk
         }
         // OVERWORLD ===================================================================================================
@@ -55,8 +55,8 @@ public class OreGeneration {
                     OreFeatureConfig.FillerBlockType.NATURAL_STONE,         // Block to replace
                     ModBlocks.EPIDAXITE_ORE.get().defaultBlockState(),      // Ore to take its place
                     4,       // Max ores per vein
-                    2,     // Top of generation
-                    15,    // Bottom of generation
+                    2,     // Bottom of generation
+                    15,    // Top of generation
                     2);  // Max veins per chunk
             // NEPENTINE -----------------------------------------------------------------------------------------------
             // Generates between y=10 and y=20 in stone
@@ -64,8 +64,8 @@ public class OreGeneration {
                     OreFeatureConfig.FillerBlockType.NATURAL_STONE,         // Block to replace
                     ModBlocks.NEPENTINE_ORE.get().defaultBlockState(),      // Ore to take its place
                     4,       // Max ores per vein
-                    10,    // Top of generation
-                    20,    // Bottom of generation
+                    10,    // Bottom of generation
+                    20,    // Top of generation
                     2);  // Max veins per chunk
         }
         // Other worlds can be added here with an else{}.
