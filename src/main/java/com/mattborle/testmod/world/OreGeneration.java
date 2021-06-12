@@ -23,7 +23,7 @@ public class OreGeneration {
         // NETHER ======================================================================================================
         if(event.getCategory().equals(Biome.Category.NETHER))
         {
-            // TODO:    PLACEHOLDER ------------------------------------------------------------------------------------
+            // EPIDAXITE -----------------------------------------------------------------------------------------------
             // Generates between y=8 and y=120
             generateOre(event.getGeneration(),
                     OreFeatureConfig.FillerBlockType.NETHER_ORE_REPLACEABLES,   // Block to replace
@@ -36,7 +36,7 @@ public class OreGeneration {
         // THE END =====================================================================================================
         else if(event.getCategory().equals(Biome.Category.THEEND))
         {
-            // TODO:    PLACEHOLDER ------------------------------------------------------------------------------------
+            // NEPENTINE -----------------------------------------------------------------------------------------------
             // Generates between y=8 and y=120
             generateOre(event.getGeneration(),
                     new BlockMatchRuleTest(Blocks.END_STONE),               // Block to replace
