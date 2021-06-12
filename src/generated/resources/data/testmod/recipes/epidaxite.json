@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "testmod:epidaxite_block"
+    }
+  ],
+  "result": {
+    "item": "testmod:epidaxite",
+    "count": 9
+  }
+}

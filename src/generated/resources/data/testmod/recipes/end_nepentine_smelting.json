@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "testmod:end_nepentine_ore"
+  },
+  "result": "testmod:nepentine",
+  "experience": 0.7,
+  "cookingtime": 200
+}

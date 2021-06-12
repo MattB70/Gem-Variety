@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "s"
+  ],
+  "key": {
+    "#": {
+      "item": "testmod:nepentine"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:nepentine_sword"
+  }
+}

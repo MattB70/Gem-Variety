@@ -1,0 +1,22 @@
+{
+  "item.testmod.epidaxite": "Epidaxite",
+  "block.testmod.epidaxite_ore": "Epidaxite Ore",
+  "block.testmod.nether_epidaxite_ore": "Nether Epidaxite Ore",
+  "block.testmod.epidaxite_block": "Block of Epidaxite",
+  "item.testmod.epidaxite_pickaxe": "Epidaxite Pickaxe",
+  "item.testmod.epidaxite_axe": "Epidaxite Axe",
+  "item.testmod.epidaxite_shovel": "Epidaxite Shovel",
+  "item.testmod.epidaxite_sword": "Epidaxite Sword",
+  "item.testmod.epidaxite_hoe": "Epidaxite Hoe",
+
+  "item.testmod.nepentine": "Nepentine",
+  "block.testmod.nepentine_ore": "Nepentine Ore",
+  "block.testmod.end_nepentine_ore": "End Nepentine Ore",
+  "block.testmod.nepentine_block": "Block of Nepentine",
+  "item.testmod.nepentine_pickaxe": "Nepentine Pickaxe",
+  "item.testmod.nepentine_axe": "Nepentine Axe",
+  "item.testmod.nepentine_shovel": "Nepentine Shovel",
+  "item.testmod.nepentine_sword": "Nepentine Sword",
+  "item.testmod.nepentine_hoe": "Nepentine Hoe"
+
+}

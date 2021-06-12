@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "testmod:epidaxite"
+    }
+  },
+  "result": {
+    "item": "testmod:epidaxite_block"
+  }
+}

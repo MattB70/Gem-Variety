@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "testmod:nepentine_block"
+    }
+  ],
+  "result": {
+    "item": "testmod:nepentine",
+    "count": 9
+  }
+}

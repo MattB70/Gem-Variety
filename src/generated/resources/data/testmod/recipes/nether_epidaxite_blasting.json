@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "testmod:nether_epidaxite_ore"
+  },
+  "result": "testmod:epidaxite",
+  "experience": 0.7,
+  "cookingtime": 100
+}
