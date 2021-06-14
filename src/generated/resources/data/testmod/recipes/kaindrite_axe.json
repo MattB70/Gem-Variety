@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "#s",
+    " s"
+  ],
+  "key": {
+    "#": {
+      "item": "testmod:kaindrite"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:kaindrite_axe"
+  }
+}

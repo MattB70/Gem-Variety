@@ -19,7 +19,9 @@ public class OreGeneration {
 
     public static void generateOres(final BiomeLoadingEvent event) {
 
+
         // SPECIFIC WORLDS:
+
         // NETHER ======================================================================================================
         if(event.getCategory().equals(Biome.Category.NETHER))
         {
@@ -31,8 +33,19 @@ public class OreGeneration {
                     4,        // Max ores per vein
                     8,      // Bottom of generation
                     120,    // Top of generation
-                    4);   // Max veins per chunk
+                    1);   // Max veins per chunk
+            // KAINDRITE -----------------------------------------------------------------------------------------------
+            // Generates between y=8 and y=120
+            generateOre(event.getGeneration(),
+                    OreFeatureConfig.FillerBlockType.NETHER_ORE_REPLACEABLES,   // Block to replace
+                    ModBlocks.NETHER_KAINDRITE_ORE.get().defaultBlockState(),   // Ore to take its place
+                    4,        // Max ores per vein
+                    8,      // Bottom of generation
+                    120,    // Top of generation
+                    3);   // Max veins per chunk
         }
+
+
         // THE END =====================================================================================================
         else if(event.getCategory().equals(Biome.Category.THEEND))
         {
@@ -44,8 +57,19 @@ public class OreGeneration {
                     4,        // Max ores per vein
                     8,      // Bottom of generation
                     120,    // Top of generation
-                    4);   // Max veins per chunk
+                    1);   // Max veins per chunk
+            // ZEOCITE -------------------------------------------------------------------------------------------------
+            // Generates between y=8 and y=120
+            generateOre(event.getGeneration(),
+                    new BlockMatchRuleTest(Blocks.END_STONE),               // Block to replace
+                    ModBlocks.END_ZEOCITE_ORE.get().defaultBlockState(),    // Ore to take its place
+                    4,        // Max ores per vein
+                    8,      // Bottom of generation
+                    120,    // Top of generation
+                    3);   // Max veins per chunk
         }
+
+
         // OVERWORLD ===================================================================================================
         else if(!(event.getCategory().equals(Biome.Category.NETHER)) || event.getCategory().equals(Biome.Category.THEEND))
         {
@@ -68,7 +92,9 @@ public class OreGeneration {
                     20,    // Top of generation
                     2);  // Max veins per chunk
         }
+
         // Other worlds can be added here with an else{}.
+
     }
 
     //Examples:

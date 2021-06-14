@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "testmod:end_zeocite_ore"
+  },
+  "result": "testmod:zeocite",
+  "experience": 0.7,
+  "cookingtime": 200
+}

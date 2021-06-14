@@ -56,5 +56,39 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.HOE_NEPENTINE).add(ModItems.NEPENTINE_HOE.get());
         tag(ModTags.Items.SWORD_NEPENTINE).add(ModItems.NEPENTINE_SWORD.get());
 
+        // ZEOCITE =====================================================================================================
+        // ORE
+        copy(ModTags.Blocks.ORES_END_ZEOCITE, ModTags.Items.ORES_END_ZEOCITE);
+        copy(Tags.Blocks.ORES, Tags.Items.ORES);
+        // BLOCK
+        copy(ModTags.Blocks.STORAGE_BLOCKS_ZEOCITE, ModTags.Items.STORAGE_BLOCKS_ZEOCITE);
+        copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
+        // GEM
+        tag(ModTags.Items.ZEOCITE).add(ModItems.ZEOCITE.get());
+        tag(Tags.Items.GEMS).addTag(ModTags.Items.ZEOCITE);
+        // TOOLS
+        tag(ModTags.Items.PICKAXE_ZEOCITE).add(ModItems.ZEOCITE_PICKAXE.get());
+        tag(ModTags.Items.AXE_ZEOCITE).add(ModItems.ZEOCITE_AXE.get());
+        tag(ModTags.Items.SHOVEL_ZEOCITE).add(ModItems.ZEOCITE_SHOVEL.get());
+        tag(ModTags.Items.HOE_ZEOCITE).add(ModItems.ZEOCITE_HOE.get());
+        tag(ModTags.Items.SWORD_ZEOCITE).add(ModItems.ZEOCITE_SWORD.get());
+
+        // KAINDRITE ===================================================================================================
+        // ORE
+        copy(ModTags.Blocks.ORES_NETHER_KAINDRITE, ModTags.Items.ORES_NETHER_KAINDRITE);
+        copy(Tags.Blocks.ORES, Tags.Items.ORES);
+        // BLOCK
+        copy(ModTags.Blocks.STORAGE_BLOCKS_KAINDRITE, ModTags.Items.STORAGE_BLOCKS_KAINDRITE);
+        copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
+        // GEM
+        tag(ModTags.Items.KAINDRITE).add(ModItems.KAINDRITE.get());
+        tag(Tags.Items.GEMS).addTag(ModTags.Items.KAINDRITE);
+        // TOOLS
+        tag(ModTags.Items.PICKAXE_KAINDRITE).add(ModItems.KAINDRITE_PICKAXE.get());
+        tag(ModTags.Items.AXE_KAINDRITE).add(ModItems.KAINDRITE_AXE.get());
+        tag(ModTags.Items.SHOVEL_KAINDRITE).add(ModItems.KAINDRITE_SHOVEL.get());
+        tag(ModTags.Items.HOE_KAINDRITE).add(ModItems.KAINDRITE_HOE.get());
+        tag(ModTags.Items.SWORD_KAINDRITE).add(ModItems.KAINDRITE_SWORD.get());
+
     }
 }

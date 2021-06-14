@@ -43,11 +43,21 @@ public class ModLootTableProvider extends LootTableProvider {
             // ORES ====================================================================================================
             dropOther(ModBlocks.EPIDAXITE_ORE.get(), ModItems.EPIDAXITE.get());
             dropOther(ModBlocks.NETHER_EPIDAXITE_ORE.get(), ModItems.EPIDAXITE.get());
+
             dropOther(ModBlocks.NEPENTINE_ORE.get(), ModItems.NEPENTINE.get());
             dropOther(ModBlocks.END_NEPENTINE_ORE.get(), ModItems.NEPENTINE.get());
+
+            dropOther(ModBlocks.END_ZEOCITE_ORE.get(), ModItems.ZEOCITE.get());
+
+            dropOther(ModBlocks.NETHER_KAINDRITE_ORE.get(), ModItems.KAINDRITE.get());
             // BLOCKS ==================================================================================================
             dropSelf(ModBlocks.EPIDAXITE_BLOCK.get());
+
             dropSelf(ModBlocks.NEPENTINE_BLOCK.get());
+
+            dropSelf(ModBlocks.ZEOCITE_BLOCK.get());
+
+            dropSelf(ModBlocks.KAINDRITE_BLOCK.get());
 
         }
 

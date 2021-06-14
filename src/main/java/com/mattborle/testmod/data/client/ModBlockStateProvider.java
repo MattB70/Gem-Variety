@@ -19,5 +19,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.NEPENTINE_BLOCK.get());
         simpleBlock(ModBlocks.NEPENTINE_ORE.get());
         simpleBlock(ModBlocks.END_NEPENTINE_ORE.get());
+        simpleBlock(ModBlocks.ZEOCITE_BLOCK.get());
+        simpleBlock(ModBlocks.END_ZEOCITE_ORE.get());
+        simpleBlock(ModBlocks.KAINDRITE_BLOCK.get());
+        simpleBlock(ModBlocks.NETHER_KAINDRITE_ORE.get());
     }
 }

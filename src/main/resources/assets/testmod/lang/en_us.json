@@ -17,6 +17,26 @@
   "item.testmod.nepentine_axe": "Nepentine Axe",
   "item.testmod.nepentine_shovel": "Nepentine Shovel",
   "item.testmod.nepentine_sword": "Nepentine Sword",
-  "item.testmod.nepentine_hoe": "Nepentine Hoe"
+  "item.testmod.nepentine_hoe": "Nepentine Hoe",
+
+  "item.testmod.zeocite": "Zeocite",
+  "block.testmod.zeocite_ore": "Zeocite Ore",
+  "block.testmod.end_zeocite_ore": "End Zeocite Ore",
+  "block.testmod.zeocite_block": "Block of Zeocite",
+  "item.testmod.zeocite_pickaxe": "Zeocite Pickaxe",
+  "item.testmod.zeocite_axe": "Zeocite Axe",
+  "item.testmod.zeocite_shovel": "Zeocite Shovel",
+  "item.testmod.zeocite_sword": "Zeocite Sword",
+  "item.testmod.zeocite_hoe": "Zeocite Hoe",
+
+  "item.testmod.kaindrite": "Kaindrite",
+  "block.testmod.kaindrite_ore": "Kaindrite Ore",
+  "block.testmod.end_kaindrite_ore": "Nether Kaindrite Ore",
+  "block.testmod.kaindrite_block": "Block of Kaindrite",
+  "item.testmod.kaindrite_pickaxe": "Kaindrite Pickaxe",
+  "item.testmod.kaindrite_axe": "Kaindrite Axe",
+  "item.testmod.kaindrite_shovel": "Kaindrite Shovel",
+  "item.testmod.kaindrite_sword": "Kaindrite Sword",
+  "item.testmod.kaindrite_hoe": "Kaindrite Hoe"
 
 }

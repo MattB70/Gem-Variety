@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "testmod:nether_kaindrite_ore"
+  },
+  "result": "testmod:kaindrite",
+  "experience": 0.7,
+  "cookingtime": 200
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "#s",
+    " s"
+  ],
+  "key": {
+    "#": {
+      "item": "testmod:zeocite"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:zeocite_axe"
+  }
+}

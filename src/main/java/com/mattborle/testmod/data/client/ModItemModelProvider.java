@@ -45,6 +45,32 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "nepentine_shovel");
         builder(itemGenerated, "nepentine_hoe");
         builder(itemGenerated, "nepentine_sword");
+
+        // ZEOCITE =====================================================================================================
+        // Block
+        withExistingParent("zeocite_block", modLoc("block/zeocite_block"));
+        // Ore
+        withExistingParent("end_zeocite_ore", modLoc("block/end_zeocite_ore"));
+        // Tools
+        builder(itemGenerated, "zeocite");
+        builder(itemGenerated, "zeocite_pickaxe");
+        builder(itemGenerated, "zeocite_axe");
+        builder(itemGenerated, "zeocite_shovel");
+        builder(itemGenerated, "zeocite_hoe");
+        builder(itemGenerated, "zeocite_sword");
+
+        // KAINDRITE =====================================================================================================
+        // Block
+        withExistingParent("kaindrite_block", modLoc("block/kaindrite_block"));
+        // Ore
+        withExistingParent("nether_kaindrite_ore", modLoc("block/nether_kaindrite_ore"));
+        // Tools
+        builder(itemGenerated, "kaindrite");
+        builder(itemGenerated, "kaindrite_pickaxe");
+        builder(itemGenerated, "kaindrite_axe");
+        builder(itemGenerated, "kaindrite_shovel");
+        builder(itemGenerated, "kaindrite_hoe");
+        builder(itemGenerated, "kaindrite_sword");
     }
 
 

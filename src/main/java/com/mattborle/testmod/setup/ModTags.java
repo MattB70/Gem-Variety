@@ -16,6 +16,10 @@ public class ModTags {
         public static final ITag.INamedTag<Block> ORES_NEPENTINE = forge("ores/nepentine");
         public static final ITag.INamedTag<Block> ORES_END_NEPENTINE = forge("ores/nepentine");
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_NEPENTINE = forge("storage_blocks/nepentine");
+        public static final ITag.INamedTag<Block> ORES_END_ZEOCITE = forge("ores/zeocite");
+        public static final ITag.INamedTag<Block> STORAGE_BLOCKS_ZEOCITE = forge("storage_blocks/zeocite");
+        public static final ITag.INamedTag<Block> ORES_NETHER_KAINDRITE = forge("ores/kaindrite");
+        public static final ITag.INamedTag<Block> STORAGE_BLOCKS_KAINDRITE = forge("storage_blocks/kaindrite");
 
         private static ITag.INamedTag<Block> forge(String path) {
             return BlockTags.bind(new ResourceLocation("forge", path).toString());
@@ -56,6 +60,36 @@ public class ModTags {
         public static final ITag.INamedTag<Item> SHOVEL_NEPENTINE = forge("shovel/nepentine");
         public static final ITag.INamedTag<Item> HOE_NEPENTINE = forge("hoe/nepentine");
         public static final ITag.INamedTag<Item> SWORD_NEPENTINE = forge("sword/nepentine");
+
+        // ZEOCITE ===================================================================================================
+        // ORE
+        //public static final ITag.INamedTag<Item> ORES_ZEOCITE = forge("ores/zeocite");    // no overworld zeocite
+        public static final ITag.INamedTag<Item> ORES_END_ZEOCITE = forge("ores/zeocite");
+        // BLOCK
+        public static final ITag.INamedTag<Item> STORAGE_BLOCKS_ZEOCITE = forge("storage_blocks/zeocite");
+        // GEM
+        public static final ITag.INamedTag<Item> ZEOCITE = forge("gems/zeocite");
+        // TOOLS
+        public static final ITag.INamedTag<Item> PICKAXE_ZEOCITE = forge("pickaxe/zeocite");
+        public static final ITag.INamedTag<Item> AXE_ZEOCITE = forge("axe/zeocite");
+        public static final ITag.INamedTag<Item> SHOVEL_ZEOCITE = forge("shovel/zeocite");
+        public static final ITag.INamedTag<Item> HOE_ZEOCITE = forge("hoe/zeocite");
+        public static final ITag.INamedTag<Item> SWORD_ZEOCITE = forge("sword/zeocite");
+
+        // KAINDRITE ===================================================================================================
+        // ORE
+        //public static final ITag.INamedTag<Item> ORES_KAINDRITE = forge("ores/kaindrite");    // no overworld kaindrite
+        public static final ITag.INamedTag<Item> ORES_NETHER_KAINDRITE = forge("ores/kaindrite");
+        // BLOCK
+        public static final ITag.INamedTag<Item> STORAGE_BLOCKS_KAINDRITE = forge("storage_blocks/kaindrite");
+        // GEM
+        public static final ITag.INamedTag<Item> KAINDRITE = forge("gems/kaindrite");
+        // TOOLS
+        public static final ITag.INamedTag<Item> PICKAXE_KAINDRITE = forge("pickaxe/kaindrite");
+        public static final ITag.INamedTag<Item> AXE_KAINDRITE = forge("axe/kaindrite");
+        public static final ITag.INamedTag<Item> SHOVEL_KAINDRITE = forge("shovel/kaindrite");
+        public static final ITag.INamedTag<Item> HOE_KAINDRITE = forge("hoe/kaindrite");
+        public static final ITag.INamedTag<Item> SWORD_KAINDRITE = forge("sword/kaindrite");
 
 
         private static ITag.INamedTag<Item> forge(String path) {

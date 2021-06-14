@@ -28,7 +28,7 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)          // pickaxe tool
                     .requiresCorrectToolForDrops()          // requires a pickaxe to get drop
                     .harvestLevel(2)                        // requires a level 2 (iron) pickaxe to get drop
-                    .sound(SoundType.STONE)));
+                    .sound(SoundType.NETHER_ORE)));
     public static final RegistryObject<Block> EPIDAXITE_BLOCK = register("epidaxite_block", () ->
             new Block(AbstractBlock.Properties.of(Material.METAL)
                     .strength(3, 10)
@@ -48,12 +48,37 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE)          // pickaxe tool
                     .requiresCorrectToolForDrops()          // requires a pickaxe to get drop
                     .harvestLevel(2)                        // requires a level 2 (iron) pickaxe to get drop
-                    .sound(SoundType.STONE)));
+                    .sound(SoundType.NETHER_ORE)));
     public static final RegistryObject<Block> NEPENTINE_BLOCK = register("nepentine_block", () ->
             new Block(AbstractBlock.Properties.of(Material.METAL)
                     .strength(3, 10)
                     .sound(SoundType.METAL)));
 
+    // ZEOCITE =========================================================================================================
+    public static final RegistryObject<Block> END_ZEOCITE_ORE = register("end_zeocite_ore", () ->
+            new Block(AbstractBlock.Properties.of(Material.STONE)
+                    .strength(3, 10)
+                    .harvestTool(ToolType.PICKAXE)          // pickaxe tool
+                    .requiresCorrectToolForDrops()          // requires a pickaxe to get drop
+                    .harvestLevel(2)                        // requires a level 2 (iron) pickaxe to get drop
+                    .sound(SoundType.NETHER_ORE)));
+    public static final RegistryObject<Block> ZEOCITE_BLOCK = register("zeocite_block", () ->
+            new Block(AbstractBlock.Properties.of(Material.METAL)
+                    .strength(3, 10)
+                    .sound(SoundType.METAL)));
+
+    // KAINDRITE =======================================================================================================
+    public static final RegistryObject<Block> NETHER_KAINDRITE_ORE = register("nether_kaindrite_ore", () ->
+            new Block(AbstractBlock.Properties.of(Material.STONE)
+                    .strength(3, 10)
+                    .harvestTool(ToolType.PICKAXE)          // pickaxe tool
+                    .requiresCorrectToolForDrops()          // requires a pickaxe to get drop
+                    .harvestLevel(2)                        // requires a level 2 (iron) pickaxe to get drop
+                    .sound(SoundType.NETHER_ORE)));
+    public static final RegistryObject<Block> KAINDRITE_BLOCK = register("kaindrite_block", () ->
+            new Block(AbstractBlock.Properties.of(Material.METAL)
+                    .strength(3, 10)
+                    .sound(SoundType.METAL)));
 
     static void register() {}
 

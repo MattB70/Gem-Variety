@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "testmod:zeocite_block"
+    }
+  ],
+  "result": {
+    "item": "testmod:zeocite",
+    "count": 9
+  }
+}

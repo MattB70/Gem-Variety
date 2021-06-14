@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "#forge:storage_blocks/epidaxite",
-    "#forge:storage_blocks/nepentine"
+    "#forge:storage_blocks/nepentine",
+    "#forge:storage_blocks/zeocite",
+    "#forge:storage_blocks/kaindrite"
   ]
 }

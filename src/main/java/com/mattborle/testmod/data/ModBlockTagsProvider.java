@@ -26,9 +26,19 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         tag(ModTags.Blocks.ORES_NEPENTINE).add(ModBlocks.END_NEPENTINE_ORE.get());
         tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_END_NEPENTINE);
-        tag(ModTags.Blocks.ORES_END_NEPENTINE).add(ModBlocks.NEPENTINE_ORE.get());
+        tag(ModTags.Blocks.ORES_NEPENTINE).add(ModBlocks.NEPENTINE_ORE.get());
         tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_NEPENTINE);
         tag(ModTags.Blocks.STORAGE_BLOCKS_NEPENTINE).add(ModBlocks.NEPENTINE_BLOCK.get());
         tag(Tags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_NEPENTINE);
+
+        tag(ModTags.Blocks.ORES_END_ZEOCITE).add(ModBlocks.END_ZEOCITE_ORE.get());
+        tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_END_ZEOCITE);
+        tag(ModTags.Blocks.STORAGE_BLOCKS_ZEOCITE).add(ModBlocks.ZEOCITE_BLOCK.get());
+        tag(Tags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_ZEOCITE);
+
+        tag(ModTags.Blocks.ORES_NETHER_KAINDRITE).add(ModBlocks.NETHER_KAINDRITE_ORE.get());
+        tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_NETHER_KAINDRITE);
+        tag(ModTags.Blocks.STORAGE_BLOCKS_KAINDRITE).add(ModBlocks.KAINDRITE_BLOCK.get());
+        tag(Tags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_KAINDRITE);
     }
 }
