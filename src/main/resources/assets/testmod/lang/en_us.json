@@ -1,4 +1,22 @@
 {
+  "gemitem.testmod.tooltip.hold_shift": "§1§oHold shift for more information§r",
+
+  "gemitem.testmod.tooltip.epidaxite": "§3Very dense and heavy§r",
+  "gemitem.testmod.tooltip.test_tooltip_shift_epidaxite": "§8Epidaxite is considered to be identical to diamond, but with a more densely packed crystal structure. It''s density attributes to it''s incredible weight as well as it''s dazzling pink color.§r",
+
+  "gemitem.testmod.tooltip_nepentine": "§3Quite light and brittle§r",
+  "gemitem.testmod.tooltip.test_tooltip_shift_nepentine": "§8Nepentine is often confused with Diamond. It''s color and feel can be very similar, but Nepentine cleaves much easier due to it''s brittle nature. Some claim that Nepentine pre-dates the pure Diamond deposits. Claims of it''s origin are sometimes fantastical. In reality, we know very little about Nepentine.§r",
+
+  "gemitem.testmod.tooltip.zeocite": "§3Very light and brittle§r",
+  "gemitem.testmod.tooltip.test_tooltip_shift_zeocite": "§8Being native to the End, not much is known about Zeocite. Some claim it''s the natural state of the Overworld''s Nepentine. Perhaps our world has leaked into the End just as much as their world has into ours?§r",
+
+  "gemitem.testmod.tooltip.kaindrite": "§3Extremely hard§r",
+  "gemitem.testmod.tooltip.test_tooltip_shift_kaindrite": "§8Being native to the Nether, not much is known about Kaindrite. Some claim it''s the natural state of the Overworld''s Epidaxite. Perhaps our world has leaked into the Nether just as much as their world has into ours?§r",
+
+
+
+
+
   "item.testmod.epidaxite": "Epidaxite",
   "block.testmod.epidaxite_ore": "Epidaxite Ore",
   "block.testmod.nether_epidaxite_ore": "Nether Epidaxite Ore",
@@ -37,6 +55,75 @@
   "item.testmod.kaindrite_axe": "Kaindrite Axe",
   "item.testmod.kaindrite_shovel": "Kaindrite Shovel",
   "item.testmod.kaindrite_sword": "Kaindrite Sword",
-  "item.testmod.kaindrite_hoe": "Kaindrite Hoe"
+  "item.testmod.kaindrite_hoe": "Kaindrite Hoe",
 
+
+
+  "item.testmod.110_pickaxe" : "Nepentine and Epidaxite Pickaxe",
+  "item.testmod.100_pickaxe" : "Epidaxite and Nepentine Pickaxe",
+  "item.testmod.221_pickaxe" : "Zeocite and Nepentine Pickaxe",
+  "item.testmod.220_pickaxe" : "Zeocite and Epidaxite Pickaxe",
+  "item.testmod.211_pickaxe" : "Nepentine and Zeocite Pickaxe",
+  "item.testmod.210_pickaxe" : "Nepentine, Zeocite and Epidaxite Pickaxe",
+  "item.testmod.200_pickaxe" : "Epidaxite and Zeocite Pickaxe",
+  "item.testmod.332_pickaxe" : "Kaindrite and Zeocite Pickaxe",
+  "item.testmod.331_pickaxe" : "Kaindrite and Epidaxite Pickaxe",
+  "item.testmod.330_pickaxe" : "Kaindrite and Epidaxite Pickaxe",
+  "item.testmod.322_pickaxe" : "Zeocite and Epidaxite Pickaxe",
+  "item.testmod.321_pickaxe" : "Nepentine, Zeocite and Kaindrite Pickaxe",
+  "item.testmod.320_pickaxe" : "Kaindrite, Zeocite and Epidaxite Pickaxe",
+  "item.testmod.311_pickaxe" : "Kaindrite and Nepentine Pickaxe",
+  "item.testmod.310_pickaxe" : "Kaindrite, Nepentine and Epidaxite Pickaxe",
+  "item.testmod.300_pickaxe" : "Epidaxite and Kaindrite Pickaxe",
+
+  "item.testmod.110_axe" : "Nepentine and Epidaxite Axe",
+  "item.testmod.100_axe" : "Epidaxite and Nepentine Axe",
+  "item.testmod.221_axe" : "Zeocite and Nepentine Axe",
+  "item.testmod.220_axe" : "Zeocite and Epidaxite Axe",
+  "item.testmod.211_axe" : "Nepentine and Zeocite Axe",
+  "item.testmod.210_axe" : "Nepentine, Zeocite and Epidaxite Axe",
+  "item.testmod.200_axe" : "Epidaxite and Zeocite Axe",
+  "item.testmod.332_axe" : "Kaindrite and Zeocite Axe",
+  "item.testmod.331_axe" : "Kaindrite and Epidaxite Axe",
+  "item.testmod.330_axe" : "Kaindrite and Epidaxite Axe",
+  "item.testmod.322_axe" : "Zeocite and Epidaxite Axe",
+  "item.testmod.321_axe" : "Nepentine, Zeocite and Kaindrite Axe",
+  "item.testmod.320_axe" : "Kaindrite, Zeocite and Epidaxite Axe",
+  "item.testmod.311_axe" : "Kaindrite and Nepentine Axe",
+  "item.testmod.310_axe" : "Kaindrite, Nepentine and Epidaxite Axe",
+  "item.testmod.300_axe" : "Epidaxite and Kaindrite Axe",
+
+  "item.testmod.110_hoe" : "Nepentine and Epidaxite Hoe",
+  "item.testmod.100_hoe" : "Epidaxite and Nepentine Hoe",
+  "item.testmod.221_hoe" : "Zeocite and Nepentine Hoe",
+  "item.testmod.220_hoe" : "Zeocite and Epidaxite Hoe",
+  "item.testmod.211_hoe" : "Nepentine and Zeocite Hoe",
+  "item.testmod.210_hoe" : "Nepentine, Zeocite and Epidaxite Hoe",
+  "item.testmod.200_hoe" : "Epidaxite and Zeocite Hoe",
+  "item.testmod.332_hoe" : "Kaindrite and Zeocite Hoe",
+  "item.testmod.331_hoe" : "Kaindrite and Epidaxite Hoe",
+  "item.testmod.330_hoe" : "Kaindrite and Epidaxite Hoe",
+  "item.testmod.322_hoe" : "Zeocite and Epidaxite Hoe",
+  "item.testmod.321_hoe" : "Nepentine, Zeocite and Kaindrite Hoe",
+  "item.testmod.320_hoe" : "Kaindrite, Zeocite and Epidaxite Hoe",
+  "item.testmod.311_hoe" : "Kaindrite and Nepentine Hoe",
+  "item.testmod.310_hoe" : "Kaindrite, Nepentine and Epidaxite Hoe",
+  "item.testmod.300_hoe" : "Epidaxite and Kaindrite Hoe",
+
+  "item.testmod.110_sword" : "Nepentine and Epidaxite Sword",
+  "item.testmod.100_sword" : "Epidaxite and Nepentine Sword",
+  "item.testmod.221_sword" : "Zeocite and Nepentine Sword",
+  "item.testmod.220_sword" : "Zeocite and Epidaxite Sword",
+  "item.testmod.211_sword" : "Nepentine and Zeocite Sword",
+  "item.testmod.210_sword" : "Nepentine, Zeocite and Epidaxite Sword",
+  "item.testmod.200_sword" : "Epidaxite and Zeocite Sword",
+  "item.testmod.332_sword" : "Kaindrite and Zeocite Sword",
+  "item.testmod.331_sword" : "Kaindrite and Epidaxite Sword",
+  "item.testmod.330_sword" : "Kaindrite and Epidaxite Sword",
+  "item.testmod.322_sword" : "Zeocite and Epidaxite Sword",
+  "item.testmod.321_sword" : "Nepentine, Zeocite and Kaindrite Sword",
+  "item.testmod.320_sword" : "Kaindrite, Zeocite and Epidaxite Sword",
+  "item.testmod.311_sword" : "Kaindrite and Nepentine Sword",
+  "item.testmod.310_sword" : "Kaindrite, Nepentine and Epidaxite Sword",
+  "item.testmod.300_sword" : "Epidaxite and Kaindrite Sword"
 }

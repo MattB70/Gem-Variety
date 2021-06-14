@@ -33,7 +33,7 @@ public enum ModItemTier implements IItemTier {
                 (-efficiency).
 
                 Epidaxite is considered to be identical to diamond, but with a more densely packed crystal structure.
-                It's density attributes to it's incredible weight. Pure Epidaxite is much too heavy for most users.
+                It's density attributes to it's incredible weight as well as it's dazzling pink color.
 
             STATS:
                     Effect         | value(*Diamond)
@@ -77,7 +77,7 @@ public enum ModItemTier implements IItemTier {
                 Zeocite is best suited for applications where efficiency is more important than longevity.
 
                 Being native to the End, not much is known about Zeocite. Some claim it's the natural state of the
-                Overworld's Nepentine. Perhaps the our world has leaked into the End just as much as their world has
+                Overworld's Nepentine. Perhaps our world has leaked into the End just as much as their world has
                 into ours?
 
                 Additional:
@@ -102,10 +102,10 @@ public enum ModItemTier implements IItemTier {
                 Kaindrite is a rare blue-violet gem native to the Nether. It is extremely hard and as a result it's very
                 strong (++maxUses). Tools made from Kaindrite rarely break, but are otherwise unremarkable
                 (-efficiency)(-attackDamage). Kaindrite would best suited for applications where longevity is more
-                important than efficiency.
+                important than efficiency. Pure Kaindrite is much too heavy for most users.
 
                 Being native to the Nether, not much is known about Kaindrite. Some claim it's the natural state of the
-                Overworld's Epidaxite. Perhaps the our world has leaked into the Nether just as much as their world has
+                Overworld's Epidaxite. Perhaps our world has leaked into the Nether just as much as their world has
                 into ours?
 
                 Additional:
@@ -123,6 +123,26 @@ public enum ModItemTier implements IItemTier {
                         3          1561           8.0F              3.0F              10 */
     KAINDRITE(3, 3122, 5.28F, 2.4F, 20, () -> Ingredient.of(ModItems.ZEOCITE.get())),
     // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+
+
+
+    // MIXED ===========================================================================================================
+    // MIXED ===========================================================================================================
+    // MIXED ===========================================================================================================
+
+    /*  PLACEHOLDER:    STATS:
+                            Effect         | value(*Diamond)
+                        PROS:--------------|----------------
+                            maxUses        | 3122  (*2.00)
+                            echantability  | 20    (*2.00)
+                        CONS:--------------|----------------
+                            efficiency     | 5.28  (*0.66)
+                            attackDamage   | 2.4   (*0.80)
+                          3          1561           8.0F              3.0F              10 */
+    PLACEHOLDER(3, 3122, 5.28F, 2.4F, 20, () -> Ingredient.of(ModItems.EPIDAXITE.get())),
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
 
     ; // floating closure as I keep forgetting this is a list.
 
