@@ -42,7 +42,7 @@ public class OreGeneration {
                     4,        // Max ores per vein
                     8,      // Bottom of generation
                     120,    // Top of generation
-                    3);   // Max veins per chunk
+                    2);   // Max veins per chunk
         }
 
 
@@ -66,7 +66,7 @@ public class OreGeneration {
                     4,        // Max ores per vein
                     8,      // Bottom of generation
                     120,    // Top of generation
-                    3);   // Max veins per chunk
+                    2);   // Max veins per chunk
         }
 
 

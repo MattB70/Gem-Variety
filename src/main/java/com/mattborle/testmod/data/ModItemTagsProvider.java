@@ -128,39 +128,19 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.AXE_310).add(ModItems.MIXED310_AXE.get());
         tag(ModTags.Items.AXE_300).add(ModItems.MIXED300_AXE.get());
         // HOE
-        tag(ModTags.Items.HOE_110).add(ModItems.MIXED110_HOE.get());
-        tag(ModTags.Items.HOE_100).add(ModItems.MIXED100_HOE.get());
-        tag(ModTags.Items.HOE_221).add(ModItems.MIXED221_HOE.get());
-        tag(ModTags.Items.HOE_220).add(ModItems.MIXED220_HOE.get());
-        tag(ModTags.Items.HOE_211).add(ModItems.MIXED211_HOE.get());
-        tag(ModTags.Items.HOE_210).add(ModItems.MIXED210_HOE.get());
-        tag(ModTags.Items.HOE_200).add(ModItems.MIXED200_HOE.get());
-        tag(ModTags.Items.HOE_332).add(ModItems.MIXED332_HOE.get());
-        tag(ModTags.Items.HOE_331).add(ModItems.MIXED331_HOE.get());
-        tag(ModTags.Items.HOE_330).add(ModItems.MIXED330_HOE.get());
-        tag(ModTags.Items.HOE_322).add(ModItems.MIXED322_HOE.get());
-        tag(ModTags.Items.HOE_321).add(ModItems.MIXED321_HOE.get());
-        tag(ModTags.Items.HOE_320).add(ModItems.MIXED320_HOE.get());
-        tag(ModTags.Items.HOE_311).add(ModItems.MIXED311_HOE.get());
-        tag(ModTags.Items.HOE_310).add(ModItems.MIXED310_HOE.get());
-        tag(ModTags.Items.HOE_300).add(ModItems.MIXED300_HOE.get());
-        // PICKAXE
-        tag(ModTags.Items.SWORD_110).add(ModItems.MIXED110_SWORD.get());
-        tag(ModTags.Items.SWORD_100).add(ModItems.MIXED100_SWORD.get());
-        tag(ModTags.Items.SWORD_221).add(ModItems.MIXED221_SWORD.get());
-        tag(ModTags.Items.SWORD_220).add(ModItems.MIXED220_SWORD.get());
-        tag(ModTags.Items.SWORD_211).add(ModItems.MIXED211_SWORD.get());
-        tag(ModTags.Items.SWORD_210).add(ModItems.MIXED210_SWORD.get());
-        tag(ModTags.Items.SWORD_200).add(ModItems.MIXED200_SWORD.get());
-        tag(ModTags.Items.SWORD_332).add(ModItems.MIXED332_SWORD.get());
-        tag(ModTags.Items.SWORD_331).add(ModItems.MIXED331_SWORD.get());
-        tag(ModTags.Items.SWORD_330).add(ModItems.MIXED330_SWORD.get());
-        tag(ModTags.Items.SWORD_322).add(ModItems.MIXED322_SWORD.get());
-        tag(ModTags.Items.SWORD_321).add(ModItems.MIXED321_SWORD.get());
-        tag(ModTags.Items.SWORD_320).add(ModItems.MIXED320_SWORD.get());
-        tag(ModTags.Items.SWORD_311).add(ModItems.MIXED311_SWORD.get());
-        tag(ModTags.Items.SWORD_310).add(ModItems.MIXED310_SWORD.get());
-        tag(ModTags.Items.SWORD_300).add(ModItems.MIXED300_SWORD.get());
+        tag(ModTags.Items.HOE_10).add(ModItems.MIXED10_HOE.get());
+        tag(ModTags.Items.HOE_21).add(ModItems.MIXED21_HOE.get());
+        tag(ModTags.Items.HOE_20).add(ModItems.MIXED20_HOE.get());
+        tag(ModTags.Items.HOE_32).add(ModItems.MIXED32_HOE.get());
+        tag(ModTags.Items.HOE_31).add(ModItems.MIXED31_HOE.get());
+        tag(ModTags.Items.HOE_30).add(ModItems.MIXED30_HOE.get());
+        // SWORD
+        tag(ModTags.Items.SWORD_10).add(ModItems.MIXED10_SWORD.get());
+        tag(ModTags.Items.SWORD_21).add(ModItems.MIXED21_SWORD.get());
+        tag(ModTags.Items.SWORD_20).add(ModItems.MIXED20_SWORD.get());
+        tag(ModTags.Items.SWORD_32).add(ModItems.MIXED32_SWORD.get());
+        tag(ModTags.Items.SWORD_31).add(ModItems.MIXED31_SWORD.get());
+        tag(ModTags.Items.SWORD_30).add(ModItems.MIXED30_SWORD.get());
 
     }
 }

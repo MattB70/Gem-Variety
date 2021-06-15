@@ -92,13 +92,6 @@ public class ModTags {
         public static final ITag.INamedTag<Item> SWORD_KAINDRITE = forge("sword/kaindrite");
 
 
-        private static ITag.INamedTag<Item> forge(String path) {
-            return ItemTags.bind(new ResourceLocation("forge", path).toString());
-        }
-
-        private static ITag.INamedTag<Item> mod(String path) {
-            return ItemTags.bind(new ResourceLocation(TestMod.MOD_ID, path).toString());
-        }
 
 
         // MIXED =======================================================================================================
@@ -137,39 +130,30 @@ public class ModTags {
         public static final ITag.INamedTag<Item> AXE_310 = forge("axe/310"); // KAINDRITE, NEPENTINE, EPIDAXITE
         public static final ITag.INamedTag<Item> AXE_300 = forge("axe/300"); // KAINDRITE, EPIDAXITE, EPIDAXITE
         // HOE
-        public static final ITag.INamedTag<Item> HOE_110 = forge("hoe/110"); // NEPENTINE, NEPENTINE, EPIDAXITE
-        public static final ITag.INamedTag<Item> HOE_100 = forge("hoe/100"); // NEPENTINE, EPIDAXITE, EPIDAXITE
-        public static final ITag.INamedTag<Item> HOE_221 = forge("hoe/221"); // ZEOCITE,   ZEOCITE,   NEPENTINE
-        public static final ITag.INamedTag<Item> HOE_220 = forge("hoe/220"); // ZEOCITE,   ZEOCITE,   EPIDAXITE
-        public static final ITag.INamedTag<Item> HOE_211 = forge("hoe/211"); // ZEOCITE,   NEPENTINE, NEPENTINE
-        public static final ITag.INamedTag<Item> HOE_210 = forge("hoe/210"); // ZEOCITE,   NEPENTINE, EPIDAXITE
-        public static final ITag.INamedTag<Item> HOE_200 = forge("hoe/200"); // ZEOCITE,   EPIDAXITE, EPIDAXITE
-        public static final ITag.INamedTag<Item> HOE_332 = forge("hoe/332"); // KAINDRITE, KAINDRITE, ZEOCITE
-        public static final ITag.INamedTag<Item> HOE_331 = forge("hoe/331"); // KAINDRITE, KAINDRITE, NEPENTINE
-        public static final ITag.INamedTag<Item> HOE_330 = forge("hoe/330"); // KAINDRITE, KAINDRITE, EPIDAXITE
-        public static final ITag.INamedTag<Item> HOE_322 = forge("hoe/322"); // KAINDRITE, ZEOCITE,   ZEOCITE
-        public static final ITag.INamedTag<Item> HOE_321 = forge("hoe/321"); // KAINDRITE, ZEOCITE,   NEPENTINE
-        public static final ITag.INamedTag<Item> HOE_320 = forge("hoe/320"); // KAINDRITE, ZEOCITE,   EPIDAXITE
-        public static final ITag.INamedTag<Item> HOE_311 = forge("hoe/311"); // KAINDRITE, NEPENTINE, NEPENTINE
-        public static final ITag.INamedTag<Item> HOE_310 = forge("hoe/310"); // KAINDRITE, NEPENTINE, EPIDAXITE
-        public static final ITag.INamedTag<Item> HOE_300 = forge("hoe/300"); // KAINDRITE, EPIDAXITE, EPIDAXITE
+        public static final ITag.INamedTag<Item> HOE_10 = forge("hoe/10"); // NEPENTINE, NEPENTINE, EPIDAXITE
+        public static final ITag.INamedTag<Item> HOE_21 = forge("hoe/21"); // NEPENTINE, EPIDAXITE, EPIDAXITE
+        public static final ITag.INamedTag<Item> HOE_20 = forge("hoe/20"); // ZEOCITE,   ZEOCITE,   NEPENTINE
+        public static final ITag.INamedTag<Item> HOE_32 = forge("hoe/32"); // ZEOCITE,   ZEOCITE,   EPIDAXITE
+        public static final ITag.INamedTag<Item> HOE_31 = forge("hoe/31"); // ZEOCITE,   NEPENTINE, NEPENTINE
+        public static final ITag.INamedTag<Item> HOE_30 = forge("hoe/30"); // ZEOCITE,   NEPENTINE, EPIDAXITE
         // SWORD
-        public static final ITag.INamedTag<Item> SWORD_110 = forge("sword/110"); // NEPENTINE, NEPENTINE, EPIDAXITE
-        public static final ITag.INamedTag<Item> SWORD_100 = forge("sword/100"); // NEPENTINE, EPIDAXITE, EPIDAXITE
-        public static final ITag.INamedTag<Item> SWORD_221 = forge("sword/221"); // ZEOCITE,   ZEOCITE,   NEPENTINE
-        public static final ITag.INamedTag<Item> SWORD_220 = forge("sword/220"); // ZEOCITE,   ZEOCITE,   EPIDAXITE
-        public static final ITag.INamedTag<Item> SWORD_211 = forge("sword/211"); // ZEOCITE,   NEPENTINE, NEPENTINE
-        public static final ITag.INamedTag<Item> SWORD_210 = forge("sword/210"); // ZEOCITE,   NEPENTINE, EPIDAXITE
-        public static final ITag.INamedTag<Item> SWORD_200 = forge("sword/200"); // ZEOCITE,   EPIDAXITE, EPIDAXITE
-        public static final ITag.INamedTag<Item> SWORD_332 = forge("sword/332"); // KAINDRITE, KAINDRITE, ZEOCITE
-        public static final ITag.INamedTag<Item> SWORD_331 = forge("sword/331"); // KAINDRITE, KAINDRITE, NEPENTINE
-        public static final ITag.INamedTag<Item> SWORD_330 = forge("sword/330"); // KAINDRITE, KAINDRITE, EPIDAXITE
-        public static final ITag.INamedTag<Item> SWORD_322 = forge("sword/322"); // KAINDRITE, ZEOCITE,   ZEOCITE
-        public static final ITag.INamedTag<Item> SWORD_321 = forge("sword/321"); // KAINDRITE, ZEOCITE,   NEPENTINE
-        public static final ITag.INamedTag<Item> SWORD_320 = forge("sword/320"); // KAINDRITE, ZEOCITE,   EPIDAXITE
-        public static final ITag.INamedTag<Item> SWORD_311 = forge("sword/311"); // KAINDRITE, NEPENTINE, NEPENTINE
-        public static final ITag.INamedTag<Item> SWORD_310 = forge("sword/310"); // KAINDRITE, NEPENTINE, EPIDAXITE
-        public static final ITag.INamedTag<Item> SWORD_300 = forge("sword/300"); // KAINDRITE, EPIDAXITE, EPIDAXITE
+        public static final ITag.INamedTag<Item> SWORD_10 = forge("sword/10"); // NEPENTINE, NEPENTINE, EPIDAXITE
+        public static final ITag.INamedTag<Item> SWORD_21 = forge("sword/21"); // NEPENTINE, EPIDAXITE, EPIDAXITE
+        public static final ITag.INamedTag<Item> SWORD_20 = forge("sword/20"); // ZEOCITE,   ZEOCITE,   NEPENTINE
+        public static final ITag.INamedTag<Item> SWORD_32 = forge("sword/32"); // ZEOCITE,   ZEOCITE,   EPIDAXITE
+        public static final ITag.INamedTag<Item> SWORD_31 = forge("sword/31"); // ZEOCITE,   NEPENTINE, NEPENTINE
+        public static final ITag.INamedTag<Item> SWORD_30 = forge("sword/30"); // ZEOCITE,   NEPENTINE, EPIDAXITE
+
+
+
+
+        private static ITag.INamedTag<Item> forge(String path) {
+            return ItemTags.bind(new ResourceLocation("forge", path).toString());
+        }
+
+        private static ITag.INamedTag<Item> mod(String path) {
+            return ItemTags.bind(new ResourceLocation(TestMod.MOD_ID, path).toString());
+        }
     }
 }
 

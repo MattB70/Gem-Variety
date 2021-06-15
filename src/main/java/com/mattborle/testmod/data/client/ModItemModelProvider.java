@@ -112,38 +112,36 @@ public class ModItemModelProvider extends ItemModelProvider {
         builder(itemGenerated, "310_axe");
         builder(itemGenerated, "300_axe");
         // hoe
-        builder(itemGenerated, "110_hoe");
-        builder(itemGenerated, "100_hoe");
-        builder(itemGenerated, "221_hoe");
-        builder(itemGenerated, "220_hoe");
-        builder(itemGenerated, "211_hoe");
-        builder(itemGenerated, "210_hoe");
-        builder(itemGenerated, "200_hoe");
-        builder(itemGenerated, "332_hoe");
-        builder(itemGenerated, "331_hoe");
-        builder(itemGenerated, "330_hoe");
-        builder(itemGenerated, "322_hoe");
-        builder(itemGenerated, "321_hoe");
-        builder(itemGenerated, "320_hoe");
-        builder(itemGenerated, "311_hoe");
-        builder(itemGenerated, "310_hoe");
-        builder(itemGenerated, "300_hoe");
+        builder(itemGenerated, "10_hoe");
+        builder(itemGenerated, "21_hoe");
+        builder(itemGenerated, "20_hoe");
+        builder(itemGenerated, "32_hoe");
+        builder(itemGenerated, "31_hoe");
+        builder(itemGenerated, "30_hoe");
         // sword
-        builder(itemGenerated, "110_sword");
-        builder(itemGenerated, "100_sword");
-        builder(itemGenerated, "221_sword");
-        builder(itemGenerated, "220_sword");
-        builder(itemGenerated, "211_sword");
-        builder(itemGenerated, "210_sword");
-        builder(itemGenerated, "200_sword");
-        builder(itemGenerated, "332_sword");
-        builder(itemGenerated, "331_sword");
-        builder(itemGenerated, "330_sword");
-        builder(itemGenerated, "322_sword");
-        builder(itemGenerated, "321_sword");
-        builder(itemGenerated, "320_sword");
-        builder(itemGenerated, "311_sword");
-        builder(itemGenerated, "310_sword");
-        builder(itemGenerated, "300_sword");
+        builder(itemGenerated, "10_sword");
+        builder(itemGenerated, "21_sword");
+        builder(itemGenerated, "20_sword");
+        builder(itemGenerated, "32_sword");
+        builder(itemGenerated, "31_sword");
+        builder(itemGenerated, "30_sword");
+
+
+        /*
+        // Programmatically build mixed
+
+        private void buildMixed(String type) {
+            for(int i = 0; i < 4; i++){
+                for(int j = i; j >= 0; j--){
+                    for(int k = j; k >= 0; k--){
+                        if(!(i == j && j == k)){
+                            String tool_name = Integer.toString(i) + Integer.toString(j) + Integer.toString(k) + "_" + type;
+                            builder(itemGenerated, tool_name);
+                        }
+                    }
+                }
+            }
+        }
+        */
     }
 }
