@@ -27,12 +27,22 @@ public class Epidaxite extends Item {
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
 
         tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.epidaxite"));
-        if(InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT)){
+        if(InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT) && !InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_CONTROL))
+        {
             // shift text
             tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.test_tooltip_shift_epidaxite"));
+            // hold shift + ctrl
+            tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.hold_shift_and_ctrl"));
+        }
+        else if(InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT) && InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_CONTROL))
+        {
+            // shift + ctrl text
+            tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.test_tooltip_shift_epidaxite"));
+            tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.test_tooltip_shift_and_ctrl_epidaxite"));
         }
         else
         {
+            // hold shift
             tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.hold_shift"));
         }
     }

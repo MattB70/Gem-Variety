@@ -27,12 +27,22 @@ public class Kaindrite extends Item {
         super.appendHoverText(stack, worldIn, tooltip, flagIn);
 
         tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.kaindrite"));
-        if(InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT)){
+        if(InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT) && !InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_CONTROL))
+        {
             // shift text
             tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.test_tooltip_shift_kaindrite"));
+            // hold shift + ctrl
+            tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.hold_shift_and_ctrl"));
+        }
+        else if(InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT) && InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_CONTROL))
+        {
+            // shift + ctrl text
+            tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.test_tooltip_shift_kaindrite"));
+            tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.test_tooltip_shift_and_ctrl_kaindrite"));
         }
         else
         {
+            // hold shift
             tooltip.add(new TranslationTextComponent("gemitem.testmod.tooltip.hold_shift"));
         }
     }

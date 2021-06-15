@@ -1,16 +1,21 @@
 {
   "gemitem.testmod.tooltip.hold_shift": "§1§oHold shift for more information§r",
+  "gemitem.testmod.tooltip.hold_shift_and_ctrl": "§1§oHold shift and ctrl for more information§r",
 
   "gemitem.testmod.tooltip.epidaxite": "§3Very dense and heavy§r",
+  "gemitem.testmod.tooltip.test_tooltip_shift_and_ctrl_epidaxite": "§l§2+§r§f Max Uses§r\n§l§2+§r§f Attack Damage§r\n§l§4-§r§f Efficiency§r",
   "gemitem.testmod.tooltip.test_tooltip_shift_epidaxite": "§8Epidaxite is considered to be identical to diamond, but with a more densely packed crystal structure. It''s density attributes to it''s incredible weight as well as it''s dazzling pink color.§r",
 
   "gemitem.testmod.tooltip_nepentine": "§3Quite light and brittle§r",
+  "gemitem.testmod.tooltip.test_tooltip_shift_and_ctrl_nepentine": "§l§2+§r§f Efficiency§r\n§l§4-§r§f Attack Damage§r\n§l§4-§r§f Max Uses§r",
   "gemitem.testmod.tooltip.test_tooltip_shift_nepentine": "§8Nepentine is often confused with Diamond. It''s color and feel can be very similar, but Nepentine cleaves much easier due to it''s brittle nature. Some claim that Nepentine pre-dates the pure Diamond deposits. Claims of it''s origin are sometimes fantastical. In reality, we know very little about Nepentine.§r",
 
   "gemitem.testmod.tooltip.zeocite": "§3Very light and brittle§r",
+  "gemitem.testmod.tooltip.test_tooltip_shift_and_ctrl_zeocite": "§l§2+§r§f Efficiency§r\n§l§2+§r§f Echantability§r\n§l§4-§r§f Attack Damage§r\n§l§4-§r§f Max Uses§r",
   "gemitem.testmod.tooltip.test_tooltip_shift_zeocite": "§8Being native to the End, not much is known about Zeocite. Some claim it''s the natural state of the Overworld''s Nepentine. Perhaps our world has leaked into the End just as much as their world has into ours?§r",
 
   "gemitem.testmod.tooltip.kaindrite": "§3Extremely hard§r",
+  "gemitem.testmod.tooltip.test_tooltip_shift_and_ctrl_kaindrite": "§l§2+§r§f Max Uses§r\n§l§2+§r§f Echantability§r\n§l§4-§r§f Efficiency§r\n§l§4-§r§f Attack Damage§r",
   "gemitem.testmod.tooltip.test_tooltip_shift_kaindrite": "§8Being native to the Nether, not much is known about Kaindrite. Some claim it''s the natural state of the Overworld''s Epidaxite. Perhaps our world has leaked into the Nether just as much as their world has into ours?§r",
 
 

@@ -19,21 +19,27 @@ import java.util.List;
 public class MixedPickaxeItem extends PickaxeItem {
 
     int mix = -1; // mix number (example: 21 - Zeocite,Nepentine)
-    String repairItem;
+    String repairItem = "\u00A7c\u00A7oInvalid item mix, repair item unknown!\u00A7f";
+    char one;
+    char two;
+    char three;
 
     public MixedPickaxeItem(IItemTier tier, int damage, float readySpeed, Properties properties, int mix) {
         super(tier, damage, readySpeed, properties);
         this.mix = mix;
+        one = Integer.toString(mix).charAt(0);
+        two = Integer.toString(mix).charAt(1);
+        three = Integer.toString(mix).charAt(2);
 
-        // Get correct repair item based on item's mix
-        switch(mix){
-            case 110: case 100: case 331: case 311: case 310:
-                repairItem = "\u00A7aNepentine\u00A7f"; break;
-            case 221: case 220: case 211: case 210: case 200: case 332: case 322: case 321: case 320:
-                repairItem = "\u00A76Zeocite\u00A7f"; break;
-            case 330: case 300:
-                repairItem = "\u00A7dEpidaxite\u00A7f"; break;
-            default: repairItem = "\u00A7cInvalid item mix, repair item unknown!\u00A7f"; break;
+        // Set correct info item based on item's mix
+        if(one == '0' || two == '0' || three == '0'){ // if there is Epidaxite
+            repairItem = "\u00A7d\u00A7oEpidaxite\u00A7f";
+        }
+        if(one == '1' || two == '1' || three == '1'){ // if there is Nepentine, overwrite.
+            repairItem = "\u00A7a\u00A7oNepentine\u00A7f";
+        }
+        if(one == '2' || two == '2' || three == '2'){ // if there is Zeocite, overwrite.
+            repairItem = "\u00A76\u00A7oZeocite\u00A7f";
         }
     }
 

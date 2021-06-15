@@ -17,20 +17,25 @@ import java.util.List;
 public class MixedSwordItem extends SwordItem {
 
     int mix = -1; // mix number (example: 21 - Zeocite,Nepentine)
-    String repairItem;
+    String repairItem = "\u00A7c\u00A7oInvalid item mix, repair item unknown!\u00A7f";
+    char one;
+    char two;
 
     public MixedSwordItem(IItemTier tier, int damage, float readySpeed, Properties properties, int mix) {
         super(tier, damage, readySpeed, properties);
         this.mix = mix;
+        one = Integer.toString(mix).charAt(0);
+        two = Integer.toString(mix).charAt(1);
 
-        // Get correct repair item based on item's mix
-        switch(mix){
-            case 10: case 31:
-                repairItem = "\u00A7aNepentine\u00A7f"; break;
-            case 21: case 20: case 32:
-                repairItem = "\u00A76Zeocite\u00A7f"; break;
-            case 30: repairItem = "\u00A7dEpidaxite\u00A7f"; break;
-            default: repairItem = "\u00A7cInvalid item mix, repair item unknown!\u00A7f"; break;
+        // Set correct info item based on item's mix
+        if(one == '0' || two == '0'){ // if there is Epidaxite
+            repairItem = "\u00A7d\u00A7oEpidaxite\u00A7f";
+        }
+        if(one == '1' || two == '1'){ // if there is Nepentine, overwrite.
+            repairItem = "\u00A7a\u00A7oNepentine\u00A7f";
+        }
+        if(one == '2' || two == '2'){ // if there is Zeocite, overwrite.
+            repairItem = "\u00A76\u00A7oZeocite\u00A7f";
         }
     }
 
