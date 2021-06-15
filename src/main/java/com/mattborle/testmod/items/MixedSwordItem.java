@@ -17,10 +17,21 @@ import java.util.List;
 public class MixedSwordItem extends SwordItem {
 
     int mix = -1; // mix number (example: 21 - Zeocite,Nepentine)
+    String repairItem;
 
     public MixedSwordItem(IItemTier tier, int damage, float readySpeed, Properties properties, int mix) {
         super(tier, damage, readySpeed, properties);
         this.mix = mix;
+
+        // Get correct repair item based on item's mix
+        switch(mix){
+            case 10: case 31:
+                repairItem = "\u00A7aNepentine\u00A7f"; break;
+            case 21: case 20: case 32:
+                repairItem = "\u00A76Zeocite\u00A7f"; break;
+            case 30: repairItem = "\u00A7dEpidaxite\u00A7f"; break;
+            default: repairItem = "\u00A7cInvalid item mix, repair item unknown!\u00A7f"; break;
+        }
     }
 
     @Override
@@ -30,7 +41,7 @@ public class MixedSwordItem extends SwordItem {
 
         if(InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT)){
             // shift text
-            tooltip.add(new TranslationTextComponent("Mix: " + Integer.toString(mix)));
+            tooltip.add(new TranslationTextComponent("Repair With: " + repairItem));
         }
         else
         {

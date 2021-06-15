@@ -19,10 +19,22 @@ import java.util.List;
 public class MixedPickaxeItem extends PickaxeItem {
 
     int mix = -1; // mix number (example: 21 - Zeocite,Nepentine)
+    String repairItem;
 
     public MixedPickaxeItem(IItemTier tier, int damage, float readySpeed, Properties properties, int mix) {
         super(tier, damage, readySpeed, properties);
         this.mix = mix;
+
+        // Get correct repair item based on item's mix
+        switch(mix){
+            case 110: case 100: case 331: case 311: case 310:
+                repairItem = "\u00A7aNepentine\u00A7f"; break;
+            case 221: case 220: case 211: case 210: case 200: case 332: case 322: case 321: case 320:
+                repairItem = "\u00A76Zeocite\u00A7f"; break;
+            case 330: case 300:
+                repairItem = "\u00A7dEpidaxite\u00A7f"; break;
+            default: repairItem = "\u00A7cInvalid item mix, repair item unknown!\u00A7f"; break;
+        }
     }
 
     @Override
@@ -32,7 +44,7 @@ public class MixedPickaxeItem extends PickaxeItem {
 
         if(InputMappings.isKeyDown(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT)){
             // shift text
-            tooltip.add(new TranslationTextComponent("Mix: " + Integer.toString(mix)));
+            tooltip.add(new TranslationTextComponent("Repair With: " + repairItem));
         }
         else
         {
