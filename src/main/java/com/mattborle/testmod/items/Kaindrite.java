@@ -15,6 +15,30 @@ import org.lwjgl.glfw.GLFW;
 import javax.annotation.Nullable;
 import java.util.List;
 
+/*  PURE KAINDRITE:
+            HISTORY:
+                Kaindrite is a rare blue-violet gem native to the Nether. It is extremely hard and as a result it's very
+                strong (++maxUses). Tools made from Kaindrite rarely break, but are otherwise unremarkable
+                (-efficiency)(-attackDamage). Kaindrite would best suited for applications where longevity is more
+                important than efficiency. Pure Kaindrite is much too heavy for most users.
+
+                Being native to the Nether, not much is known about Kaindrite. Some claim it's the natural state of the
+                Overworld's Epidaxite. Perhaps our world has leaked into the Nether just as much as their world has
+                into ours?
+
+                Additional:
+                    Arcane (++echantability)
+
+            STATS:
+                    Effect         | value(*Diamond)
+                PROS:--------------|----------------
+                    maxUses        | 3122  (*2.00)
+                    echantability  | 20    (*2.00)
+                CONS:--------------|----------------
+                    efficiency     | 5.28  (*0.66)
+                    attackDamage   | 2.4   (*0.80)
+*/
+
 public class Kaindrite extends Item {
 
     public Kaindrite(Properties properties) {

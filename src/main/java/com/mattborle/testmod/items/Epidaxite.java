@@ -15,6 +15,25 @@ import org.lwjgl.glfw.GLFW;
 import javax.annotation.Nullable;
 import java.util.List;
 
+/*  PURE EPIDAXITE:
+        HISTORY:
+            Epidaxite is a rare pink gem native to the Overworld. It's very dense and heavy and as a result
+            it's strong (+maxUses) and powerful (+attackDamage). Tools made from Epidaxite are often unwieldy
+            (-efficiency).
+
+            Epidaxite is considered to be identical to diamond, but with a more densely packed crystal structure.
+            It's density attributes to it's incredible weight as well as it's dazzling pink color.
+
+        STATS:
+                Effect         | value(*Diamond)
+            PROS:--------------|----------------
+                maxUses        | 2342 (*1.50)
+                attackDamage   | 4.5F (*1.50)
+            CONS:--------------|----------------
+                efficiency     | 6.0F (*0.75)
+
+ */
+
 public class Epidaxite extends Item {
 
     public Epidaxite(Properties properties) {

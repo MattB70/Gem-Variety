@@ -18,6 +18,25 @@ import org.lwjgl.glfw.GLFW;
 import javax.annotation.Nullable;
 import java.util.List;
 
+/*  PURE NEPENTINE:
+        HISTORY:
+            Nepentine is a rare light-green gem native to the Overworld. It is less dense than Diamond and as a result
+            it's light (+efficiency)(-attackDamage). Tools made from Nepentine are often slightly brittle (-maxUses).
+
+            Nepentine is often confused with Diamond. It's color and feel can be very similar, but Nepentine cleaves
+            much easier due to its brittle nature. Some claim that Nepentine pre-dates the pure Diamond deposits.
+            Claims of its origin are sometimes fantastical. In reality, we know very little about Nepentine.
+
+        STATS:
+                Effect         | value(*Diamond)
+            PROS:--------------|----------------
+                efficiency     | 10.0F (*1.25)
+            CONS:--------------|----------------
+                maxUses        | 1171 (*0.75)
+                attackDamage   | 2.25 (*0.75)
+
+ */
+
 public class Nepentine extends Item {
 
     public Nepentine(Properties properties) {

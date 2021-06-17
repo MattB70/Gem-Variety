@@ -15,6 +15,29 @@ import org.lwjgl.glfw.GLFW;
 import javax.annotation.Nullable;
 import java.util.List;
 
+/*  PURE ZEOCITE:
+        HISTORY:
+            Zeocite is a rare orange gem native to the End. It is less dense than Diamond and as a result
+            it's very light (++efficiency)(--attackDamage). Tools made from Zeocite are quite brittle (--maxUses).
+            Zeocite is best suited for applications where efficiency is more important than longevity.
+
+            Being native to the End, not much is known about Zeocite. Some claim it's the natural state of the
+            Overworld's Nepentine. Perhaps our world has leaked into the End just as much as their world has
+            into ours?
+
+            Additional:
+                Alien (++echantability)
+
+        STATS:
+                Effect         | value(*Diamond)
+            PROS:--------------|----------------
+                efficiency     | 16.0F (*2.00)
+                echantability  | 20    (*2.00)
+            CONS:--------------|----------------
+                maxUses        | 781  (*0.50)
+                attackDamage   | 2.00 (*0.66)
+ */
+
 public class Zeocite extends Item {
 
     public Zeocite(Properties properties) {
