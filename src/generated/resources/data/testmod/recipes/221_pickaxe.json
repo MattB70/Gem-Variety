@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZZN",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "Z": {
+      "item": "testmod:zeocite"
+    },
+    "N": {
+      "item": "testmod:nepentine"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:221_pickaxe"
+  }
+}

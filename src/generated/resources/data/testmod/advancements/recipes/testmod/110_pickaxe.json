@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "testmod:110_pickaxe"
+    ]
+  },
+  "criteria": {
+    "has_epidaxite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "testmod:epidaxite"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "testmod:110_pickaxe"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_epidaxite",
+      "has_the_recipe"
+    ]
+  ]
+}

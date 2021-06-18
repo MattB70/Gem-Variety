@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Z ",
+    " E ",
+    " s "
+  ],
+  "key": {
+    "E": {
+      "item": "testmod:epidaxite"
+    },
+    "Z": {
+      "item": "testmod:zeocite"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:20_sword"
+  }
+}

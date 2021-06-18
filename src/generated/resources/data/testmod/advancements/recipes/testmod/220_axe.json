@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "testmod:220_axe"
+    ]
+  },
+  "criteria": {
+    "has_zeocite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "testmod:zeocite"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "testmod:220_axe"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_zeocite",
+      "has_the_recipe"
+    ]
+  ]
+}

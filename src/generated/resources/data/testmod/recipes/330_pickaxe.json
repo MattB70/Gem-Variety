@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "KKE",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "E": {
+      "item": "testmod:epidaxite"
+    },
+    "K": {
+      "item": "testmod:kaindrite"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:330_pickaxe"
+  }
+}

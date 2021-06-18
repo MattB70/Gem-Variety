@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EE ",
+    "Ks ",
+    " s "
+  ],
+  "key": {
+    "K": {
+      "item": "testmod:kaindrite"
+    },
+    "E": {
+      "item": "testmod:epidaxite"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:300_axe"
+  }
+}

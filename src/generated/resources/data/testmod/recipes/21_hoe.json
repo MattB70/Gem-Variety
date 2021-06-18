@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZN ",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "N": {
+      "item": "testmod:nepentine"
+    },
+    "Z": {
+      "item": "testmod:zeocite"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:21_hoe"
+  }
+}

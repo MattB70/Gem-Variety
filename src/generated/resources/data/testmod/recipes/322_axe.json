@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZZ ",
+    "Ks ",
+    " s "
+  ],
+  "key": {
+    "Z": {
+      "item": "testmod:zeocite"
+    },
+    "K": {
+      "item": "testmod:kaindrite"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:322_axe"
+  }
+}

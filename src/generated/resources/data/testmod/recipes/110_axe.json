@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NN ",
+    "Es ",
+    " s "
+  ],
+  "key": {
+    "E": {
+      "item": "testmod:epidaxite"
+    },
+    "N": {
+      "item": "testmod:nepentine"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:110_axe"
+  }
+}

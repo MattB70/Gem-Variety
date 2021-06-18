@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "KN ",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "K": {
+      "item": "testmod:kaindrite"
+    },
+    "N": {
+      "item": "testmod:nepentine"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "testmod:31_hoe"
+  }
+}
