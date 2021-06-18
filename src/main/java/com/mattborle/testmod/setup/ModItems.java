@@ -1,6 +1,8 @@
 package com.mattborle.testmod.setup;
 
+import com.mattborle.testmod.TestMod;
 import com.mattborle.testmod.items.*;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 
@@ -41,28 +43,45 @@ public class ModItems {
     static float epidaxite_ready = -0.18f;
     static float epidaxite_ready_sword = -0.22f;
     // GEM
-    public static final RegistryObject<Epidaxite> EPIDAXITE = Registration.ITEMS.register("epidaxite", () -> new Epidaxite(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+    public static final RegistryObject<Epidaxite> EPIDAXITE = Registration.ITEMS.register("epidaxite", () -> new Epidaxite(new Item.Properties().tab(TestMod.creativeTab)));
     // TOOLS
     public static final RegistryObject<ModPickaxeItem> EPIDAXITE_PICKAXE = Registration.ITEMS.register("epidaxite_pickaxe", () -> new ModPickaxeItem(ModItemTier.EPIDAXITE,
                     1,                                   // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", epidaxite_ready),   // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),0));
+                    (new Item.Properties()).tab(TestMod.creativeTab),0));
     public static final RegistryObject<ModAxeItem> EPIDAXITE_AXE = Registration.ITEMS.register("epidaxite_axe", () -> new ModAxeItem(ModItemTier.EPIDAXITE,
                     5.0f,                                // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", epidaxite_ready),       // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),0));
+                    (new Item.Properties()).tab(TestMod.creativeTab),0));
     public static final RegistryObject<ModShovelItem> EPIDAXITE_SHOVEL = Registration.ITEMS.register("epidaxite_shovel", () -> new ModShovelItem(ModItemTier.EPIDAXITE,
                     1.5f,                                // DAMAGE   (see tier in ModItemTier)
                     readySpeed("shovel", epidaxite_ready),    // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),0));
+                    (new Item.Properties()).tab(TestMod.creativeTab),0));
     public static final RegistryObject<ModHoeItem> EPIDAXITE_HOE = Registration.ITEMS.register("epidaxite_hoe", () -> new ModHoeItem(ModItemTier.EPIDAXITE,
                     -3,                                 // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", epidaxite_ready),       // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),0));
+                    (new Item.Properties()).tab(TestMod.creativeTab),0));
     public static final RegistryObject<ModSwordItem> EPIDAXITE_SWORD = Registration.ITEMS.register("epidaxite_sword", () -> new ModSwordItem(ModItemTier.EPIDAXITE,
                     3,                                    // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", epidaxite_ready_sword),// READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),0));
+                    (new Item.Properties()).tab(TestMod.creativeTab),0));
+    // ARMOUR
+    public static final RegistryObject<ModArmorItem> EPIDAXITE_HELMET = Registration.ITEMS.register("epidaxite_helmet", () -> new ModArmorItem(ModArmorTier.EPIDAXITE,
+            EquipmentSlotType.HEAD,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            0));
+    public static final RegistryObject<ModArmorItem> EPIDAXITE_CHESTPLATE = Registration.ITEMS.register("epidaxite_chestplate", () -> new ModArmorItem(ModArmorTier.EPIDAXITE,
+            EquipmentSlotType.CHEST,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            0));
+    public static final RegistryObject<ModArmorItem> EPIDAXITE_LEGGINGS = Registration.ITEMS.register("epidaxite_leggings", () -> new ModArmorItem(ModArmorTier.EPIDAXITE,
+            EquipmentSlotType.LEGS,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            0));
+    public static final RegistryObject<ModArmorItem> EPIDAXITE_BOOTS = Registration.ITEMS.register("epidaxite_boots", () -> new ModArmorItem(ModArmorTier.EPIDAXITE,
+            EquipmentSlotType.FEET,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            0));
 
 
 
@@ -71,29 +90,45 @@ public class ModItems {
     static float nepentine_ready = 0.25f;
     static float nepentine_ready_sword = 0.35f;
     // GEM
-    public static final RegistryObject<Nepentine> NEPENTINE = Registration.ITEMS.register("nepentine", () -> new Nepentine(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+    public static final RegistryObject<Nepentine> NEPENTINE = Registration.ITEMS.register("nepentine", () -> new Nepentine(new Item.Properties().tab(TestMod.creativeTab)));
     // TOOLS
     public static final RegistryObject<ModPickaxeItem> NEPENTINE_PICKAXE = Registration.ITEMS.register("nepentine_pickaxe", () -> new ModPickaxeItem(ModItemTier.NEPENTINE,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", nepentine_ready),     // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),1));
+                    (new Item.Properties()).tab(TestMod.creativeTab),1));
     public static final RegistryObject<ModAxeItem> NEPENTINE_AXE = Registration.ITEMS.register("nepentine_axe", () -> new ModAxeItem(ModItemTier.NEPENTINE,
                     5.0f,                                  // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", nepentine_ready),         // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),1));
+                    (new Item.Properties()).tab(TestMod.creativeTab),1));
     public static final RegistryObject<ModShovelItem> NEPENTINE_SHOVEL = Registration.ITEMS.register("nepentine_shovel", () -> new ModShovelItem(ModItemTier.NEPENTINE,
                     1.5f,                                  // DAMAGE   (see tier in ModItemTier)
                     readySpeed("shovel", nepentine_ready),      // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),1));
+                    (new Item.Properties()).tab(TestMod.creativeTab),1));
     public static final RegistryObject<ModHoeItem> NEPENTINE_HOE = Registration.ITEMS.register("nepentine_hoe", () -> new ModHoeItem(ModItemTier.NEPENTINE,
                     -3,                                   // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", nepentine_ready),         // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),1));
+                    (new Item.Properties()).tab(TestMod.creativeTab),1));
     public static final RegistryObject<ModSwordItem> NEPENTINE_SWORD = Registration.ITEMS.register("nepentine_sword", () -> new ModSwordItem(ModItemTier.NEPENTINE,
                     3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", nepentine_ready_sword), // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),1));
-
+                    (new Item.Properties()).tab(TestMod.creativeTab),1));
+    // ARMOUR
+    public static final RegistryObject<ModArmorItem> NEPENTINE_HELMET = Registration.ITEMS.register("nepentine_helmet", () -> new ModArmorItem(ModArmorTier.NEPENTINE,
+            EquipmentSlotType.HEAD,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            1));
+    public static final RegistryObject<ModArmorItem> NEPENTINE_CHESTPLATE = Registration.ITEMS.register("nepentine_chestplate", () -> new ModArmorItem(ModArmorTier.NEPENTINE,
+            EquipmentSlotType.CHEST,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            1));
+    public static final RegistryObject<ModArmorItem> NEPENTINE_LEGGINGS = Registration.ITEMS.register("nepentine_leggings", () -> new ModArmorItem(ModArmorTier.NEPENTINE,
+            EquipmentSlotType.LEGS,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            1));
+    public static final RegistryObject<ModArmorItem> NEPENTINE_BOOTS = Registration.ITEMS.register("nepentine_boots", () -> new ModArmorItem(ModArmorTier.NEPENTINE,
+            EquipmentSlotType.FEET,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            1));
 
 
     // ZEOCITE =========================================================================================================
@@ -101,29 +136,45 @@ public class ModItems {
     static float zeocite_ready = 0.65f;
     static float zeocite_ready_sword = 0.80f;
     // GEM
-    public static final RegistryObject<Zeocite> ZEOCITE = Registration.ITEMS.register("zeocite", () -> new Zeocite(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+    public static final RegistryObject<Zeocite> ZEOCITE = Registration.ITEMS.register("zeocite", () -> new Zeocite(new Item.Properties().tab(TestMod.creativeTab)));
     // TOOLS
     public static final RegistryObject<ModPickaxeItem> ZEOCITE_PICKAXE = Registration.ITEMS.register("zeocite_pickaxe", () -> new ModPickaxeItem(ModItemTier.ZEOCITE,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", zeocite_ready),       // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),2));
+                    (new Item.Properties()).tab(TestMod.creativeTab),2));
     public static final RegistryObject<ModAxeItem> ZEOCITE_AXE = Registration.ITEMS.register("zeocite_axe", () -> new ModAxeItem(ModItemTier.ZEOCITE,
                     5.0f,                                  // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", zeocite_ready),           // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),2));
+                    (new Item.Properties()).tab(TestMod.creativeTab),2));
     public static final RegistryObject<ModShovelItem> ZEOCITE_SHOVEL = Registration.ITEMS.register("zeocite_shovel", () -> new ModShovelItem(ModItemTier.ZEOCITE,
                     1.5f,                                  // DAMAGE   (see tier in ModItemTier)
                     readySpeed("shovel", zeocite_ready),        // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),2));
+                    (new Item.Properties()).tab(TestMod.creativeTab),2));
     public static final RegistryObject<ModHoeItem> ZEOCITE_HOE = Registration.ITEMS.register("zeocite_hoe", () -> new ModHoeItem(ModItemTier.ZEOCITE,
                     -3,                                   // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", zeocite_ready),           // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),2));
+                    (new Item.Properties()).tab(TestMod.creativeTab),2));
     public static final RegistryObject<ModSwordItem> ZEOCITE_SWORD = Registration.ITEMS.register("zeocite_sword", () -> new ModSwordItem(ModItemTier.ZEOCITE,
                     3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", zeocite_ready_sword),   // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),2));
-
+                    (new Item.Properties()).tab(TestMod.creativeTab),2));
+    // ARMOUR
+    public static final RegistryObject<ModArmorItem> ZEOCITE_HELMET = Registration.ITEMS.register("zeocite_helmet", () -> new ModArmorItem(ModArmorTier.ZEOCITE,
+            EquipmentSlotType.HEAD,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            2));
+    public static final RegistryObject<ModArmorItem> ZEOCITE_CHESTPLATE = Registration.ITEMS.register("zeocite_chestplate", () -> new ModArmorItem(ModArmorTier.ZEOCITE,
+            EquipmentSlotType.CHEST,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            2));
+    public static final RegistryObject<ModArmorItem> ZEOCITE_LEGGINGS = Registration.ITEMS.register("zeocite_leggings", () -> new ModArmorItem(ModArmorTier.ZEOCITE,
+            EquipmentSlotType.LEGS,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            2));
+    public static final RegistryObject<ModArmorItem> ZEOCITE_BOOTS = Registration.ITEMS.register("zeocite_boots", () -> new ModArmorItem(ModArmorTier.ZEOCITE,
+            EquipmentSlotType.FEET,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            2));
 
 
     // KAINDRITE =======================================================================================================
@@ -131,29 +182,45 @@ public class ModItems {
     static float kaindrite_ready = -0.20f;
     static float kaindrite_ready_sword = -0.28f;
     // GEM
-    public static final RegistryObject<Kaindrite> KAINDRITE = Registration.ITEMS.register("kaindrite", () -> new Kaindrite(new Item.Properties().tab(ItemGroup.TAB_MATERIALS)));
+    public static final RegistryObject<Kaindrite> KAINDRITE = Registration.ITEMS.register("kaindrite", () -> new Kaindrite(new Item.Properties().tab(TestMod.creativeTab)));
     // TOOLS
     public static final RegistryObject<ModPickaxeItem> KAINDRITE_PICKAXE = Registration.ITEMS.register("kaindrite_pickaxe", () -> new ModPickaxeItem(ModItemTier.KAINDRITE,
                     1,                                       // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", kaindrite_ready),       // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),3));
+                    (new Item.Properties()).tab(TestMod.creativeTab),3));
     public static final RegistryObject<ModAxeItem> KAINDRITE_AXE = Registration.ITEMS.register("kaindrite_axe", () -> new ModAxeItem(ModItemTier.KAINDRITE,
                     5.0f,                                    // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", kaindrite_ready),           // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),3));
+                    (new Item.Properties()).tab(TestMod.creativeTab),3));
     public static final RegistryObject<ModShovelItem> KAINDRITE_SHOVEL = Registration.ITEMS.register("kaindrite_shovel", () -> new ModShovelItem(ModItemTier.KAINDRITE,
                     1.5f,                                    // DAMAGE   (see tier in ModItemTier)
                     readySpeed("shovel", kaindrite_ready),        // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),3));
+                    (new Item.Properties()).tab(TestMod.creativeTab),3));
     public static final RegistryObject<ModHoeItem> KAINDRITE_HOE = Registration.ITEMS.register("kaindrite_hoe", () -> new ModHoeItem(ModItemTier.KAINDRITE,
                     -3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", kaindrite_ready),           // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),3));
+                    (new Item.Properties()).tab(TestMod.creativeTab),3));
     public static final RegistryObject<ModSwordItem> KAINDRITE_SWORD = Registration.ITEMS.register("kaindrite_sword", () -> new ModSwordItem(ModItemTier.KAINDRITE,
                     3,                                       // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", kaindrite_ready_sword),   // READY SPEED
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),3));
-
+                    (new Item.Properties()).tab(TestMod.creativeTab),3));
+    // ARMOUR
+    public static final RegistryObject<ModArmorItem> KAINDRITE_HELMET = Registration.ITEMS.register("kaindrite_helmet", () -> new ModArmorItem(ModArmorTier.KAINDRITE,
+            EquipmentSlotType.HEAD,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            3));
+    public static final RegistryObject<ModArmorItem> KAINDRITE_CHESTPLATE = Registration.ITEMS.register("kaindrite_chestplate", () -> new ModArmorItem(ModArmorTier.KAINDRITE,
+            EquipmentSlotType.CHEST,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            3));
+    public static final RegistryObject<ModArmorItem> KAINDRITE_LEGGINGS = Registration.ITEMS.register("kaindrite_leggings", () -> new ModArmorItem(ModArmorTier.KAINDRITE,
+            EquipmentSlotType.LEGS,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            3));
+    public static final RegistryObject<ModArmorItem> KAINDRITE_BOOTS = Registration.ITEMS.register("kaindrite_boots", () -> new ModArmorItem(ModArmorTier.KAINDRITE,
+            EquipmentSlotType.FEET,
+            (new Item.Properties()).tab(TestMod.creativeTab),
+            3));
 
 
 
@@ -188,161 +255,161 @@ public class ModItems {
     public static final RegistryObject<ModPickaxeItem> MIXED110_PICKAXE = Registration.ITEMS.register("110_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED110,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready110),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),110));
+                    (new Item.Properties()).tab(TestMod.creativeTab),110));
     public static final RegistryObject<ModPickaxeItem> MIXED100_PICKAXE = Registration.ITEMS.register("100_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED100,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready100),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),100));
+                    (new Item.Properties()).tab(TestMod.creativeTab),100));
     public static final RegistryObject<ModPickaxeItem> MIXED221_PICKAXE = Registration.ITEMS.register("221_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED221,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready221),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),221));
+                    (new Item.Properties()).tab(TestMod.creativeTab),221));
     public static final RegistryObject<ModPickaxeItem> MIXED220_PICKAXE = Registration.ITEMS.register("220_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED220,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready220),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),220));
+                    (new Item.Properties()).tab(TestMod.creativeTab),220));
     public static final RegistryObject<ModPickaxeItem> MIXED211_PICKAXE = Registration.ITEMS.register("211_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED211,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready211),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),211));
+                    (new Item.Properties()).tab(TestMod.creativeTab),211));
     public static final RegistryObject<ModPickaxeItem> MIXED210_PICKAXE = Registration.ITEMS.register("210_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED210,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready210),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),210));
+                    (new Item.Properties()).tab(TestMod.creativeTab),210));
     public static final RegistryObject<ModPickaxeItem> MIXED200_PICKAXE = Registration.ITEMS.register("200_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED200,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready200),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),200));
+                    (new Item.Properties()).tab(TestMod.creativeTab),200));
     public static final RegistryObject<ModPickaxeItem> MIXED332_PICKAXE = Registration.ITEMS.register("332_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED332,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready332),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),322));
+                    (new Item.Properties()).tab(TestMod.creativeTab),322));
     public static final RegistryObject<ModPickaxeItem> MIXED331_PICKAXE = Registration.ITEMS.register("331_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED331,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready331),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),331));
+                    (new Item.Properties()).tab(TestMod.creativeTab),331));
     public static final RegistryObject<ModPickaxeItem> MIXED330_PICKAXE = Registration.ITEMS.register("330_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED330,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready330),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),330));
+                    (new Item.Properties()).tab(TestMod.creativeTab),330));
     public static final RegistryObject<ModPickaxeItem> MIXED322_PICKAXE = Registration.ITEMS.register("322_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED322,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready322),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),322));
+                    (new Item.Properties()).tab(TestMod.creativeTab),322));
     public static final RegistryObject<ModPickaxeItem> MIXED321_PICKAXE = Registration.ITEMS.register("321_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED321,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready321),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),321));
+                    (new Item.Properties()).tab(TestMod.creativeTab),321));
     public static final RegistryObject<ModPickaxeItem> MIXED320_PICKAXE = Registration.ITEMS.register("320_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED320,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready320),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),320));
+                    (new Item.Properties()).tab(TestMod.creativeTab),320));
     public static final RegistryObject<ModPickaxeItem> MIXED311_PICKAXE = Registration.ITEMS.register("311_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED311,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready311),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),311));
+                    (new Item.Properties()).tab(TestMod.creativeTab),311));
     public static final RegistryObject<ModPickaxeItem> MIXED310_PICKAXE = Registration.ITEMS.register("310_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED310,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready310),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),310));
+                    (new Item.Properties()).tab(TestMod.creativeTab),310));
     public static final RegistryObject<ModPickaxeItem> MIXED300_PICKAXE = Registration.ITEMS.register("300_pickaxe", () -> new ModPickaxeItem(ModItemTier.MIXED300,
                     1,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("pickaxe", ready300),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),300));
+                    (new Item.Properties()).tab(TestMod.creativeTab),300));
 
     
     // Axe
     public static final RegistryObject<ModAxeItem> MIXED110_AXE = Registration.ITEMS.register("110_axe", () -> new ModAxeItem(ModItemTier.MIXED110,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready110),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),110));
+                    (new Item.Properties()).tab(TestMod.creativeTab),110));
     public static final RegistryObject<ModAxeItem> MIXED100_AXE = Registration.ITEMS.register("100_axe", () -> new ModAxeItem(ModItemTier.MIXED100,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready100),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),100));
+                    (new Item.Properties()).tab(TestMod.creativeTab),100));
     public static final RegistryObject<ModAxeItem> MIXED221_AXE = Registration.ITEMS.register("221_axe", () -> new ModAxeItem(ModItemTier.MIXED221,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready221),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),221));
+                    (new Item.Properties()).tab(TestMod.creativeTab),221));
     public static final RegistryObject<ModAxeItem> MIXED220_AXE = Registration.ITEMS.register("220_axe", () -> new ModAxeItem(ModItemTier.MIXED220,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready220),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),220));
+                    (new Item.Properties()).tab(TestMod.creativeTab),220));
     public static final RegistryObject<ModAxeItem> MIXED211_AXE = Registration.ITEMS.register("211_axe", () -> new ModAxeItem(ModItemTier.MIXED211,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready211),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),211));
+                    (new Item.Properties()).tab(TestMod.creativeTab),211));
     public static final RegistryObject<ModAxeItem> MIXED210_AXE = Registration.ITEMS.register("210_axe", () -> new ModAxeItem(ModItemTier.MIXED210,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready210),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),210));
+                    (new Item.Properties()).tab(TestMod.creativeTab),210));
     public static final RegistryObject<ModAxeItem> MIXED200_AXE = Registration.ITEMS.register("200_axe", () -> new ModAxeItem(ModItemTier.MIXED200,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready200),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),200));
+                    (new Item.Properties()).tab(TestMod.creativeTab),200));
     public static final RegistryObject<ModAxeItem> MIXED332_AXE = Registration.ITEMS.register("332_axe", () -> new ModAxeItem(ModItemTier.MIXED332,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready332),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),322));
+                    (new Item.Properties()).tab(TestMod.creativeTab),322));
     public static final RegistryObject<ModAxeItem> MIXED331_AXE = Registration.ITEMS.register("331_axe", () -> new ModAxeItem(ModItemTier.MIXED331,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready331),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),331));
+                    (new Item.Properties()).tab(TestMod.creativeTab),331));
     public static final RegistryObject<ModAxeItem> MIXED330_AXE = Registration.ITEMS.register("330_axe", () -> new ModAxeItem(ModItemTier.MIXED330,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready330),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),330));
+                    (new Item.Properties()).tab(TestMod.creativeTab),330));
     public static final RegistryObject<ModAxeItem> MIXED322_AXE = Registration.ITEMS.register("322_axe", () -> new ModAxeItem(ModItemTier.MIXED322,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready322),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),322));
+                    (new Item.Properties()).tab(TestMod.creativeTab),322));
     public static final RegistryObject<ModAxeItem> MIXED321_AXE = Registration.ITEMS.register("321_axe", () -> new ModAxeItem(ModItemTier.MIXED321,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready321),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),321));
+                    (new Item.Properties()).tab(TestMod.creativeTab),321));
     public static final RegistryObject<ModAxeItem> MIXED320_AXE = Registration.ITEMS.register("320_axe", () -> new ModAxeItem(ModItemTier.MIXED320,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready320),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),320));
+                    (new Item.Properties()).tab(TestMod.creativeTab),320));
     public static final RegistryObject<ModAxeItem> MIXED311_AXE = Registration.ITEMS.register("311_axe", () -> new ModAxeItem(ModItemTier.MIXED311,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready311),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),311));
+                    (new Item.Properties()).tab(TestMod.creativeTab),311));
     public static final RegistryObject<ModAxeItem> MIXED310_AXE = Registration.ITEMS.register("310_axe", () -> new ModAxeItem(ModItemTier.MIXED310,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready310),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),310));
+                    (new Item.Properties()).tab(TestMod.creativeTab),310));
     public static final RegistryObject<ModAxeItem> MIXED300_AXE = Registration.ITEMS.register("300_axe", () -> new ModAxeItem(ModItemTier.MIXED300,
                     5.0f,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("axe", ready300),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),300));
+                    (new Item.Properties()).tab(TestMod.creativeTab),300));
 
 
     // Hoe
     public static final RegistryObject<ModHoeItem> MIXED10_HOE = Registration.ITEMS.register("10_hoe", () -> new ModHoeItem(ModItemTier.MIXED10,
                     -3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", ready10),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),10));
+                    (new Item.Properties()).tab(TestMod.creativeTab),10));
     public static final RegistryObject<ModHoeItem> MIXED21_HOE = Registration.ITEMS.register("21_hoe", () -> new ModHoeItem(ModItemTier.MIXED21,
                     -3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", ready21),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),21));
+                    (new Item.Properties()).tab(TestMod.creativeTab),21));
     public static final RegistryObject<ModHoeItem> MIXED20_HOE = Registration.ITEMS.register("20_hoe", () -> new ModHoeItem(ModItemTier.MIXED20,
                     -3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", ready20),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),20));
+                    (new Item.Properties()).tab(TestMod.creativeTab),20));
     public static final RegistryObject<ModHoeItem> MIXED32_HOE = Registration.ITEMS.register("32_hoe", () -> new ModHoeItem(ModItemTier.MIXED32,
                     -3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", ready32),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),32));
+                    (new Item.Properties()).tab(TestMod.creativeTab),32));
     public static final RegistryObject<ModHoeItem> MIXED31_HOE = Registration.ITEMS.register("31_hoe", () -> new ModHoeItem(ModItemTier.MIXED31,
                     -3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", ready31),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),31));
+                    (new Item.Properties()).tab(TestMod.creativeTab),31));
     public static final RegistryObject<ModHoeItem> MIXED30_HOE = Registration.ITEMS.register("30_hoe", () -> new ModHoeItem(ModItemTier.MIXED30,
                     -3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("hoe", ready30),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_TOOLS),30));
+                    (new Item.Properties()).tab(TestMod.creativeTab),30));
 
 
 
@@ -350,25 +417,25 @@ public class ModItems {
     public static final RegistryObject<ModSwordItem> MIXED10_SWORD = Registration.ITEMS.register("10_sword", () -> new ModSwordItem(ModItemTier.MIXED10,
                     3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", ready10),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),10));
+                    (new Item.Properties()).tab(TestMod.creativeTab),10));
     public static final RegistryObject<ModSwordItem> MIXED21_SWORD = Registration.ITEMS.register("21_sword", () -> new ModSwordItem(ModItemTier.MIXED21,
                     3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", ready21),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),21));
+                    (new Item.Properties()).tab(TestMod.creativeTab),21));
     public static final RegistryObject<ModSwordItem> MIXED20_SWORD = Registration.ITEMS.register("20_sword", () -> new ModSwordItem(ModItemTier.MIXED20,
                     3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", ready20),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),20));
+                    (new Item.Properties()).tab(TestMod.creativeTab),20));
     public static final RegistryObject<ModSwordItem> MIXED32_SWORD = Registration.ITEMS.register("32_sword", () -> new ModSwordItem(ModItemTier.MIXED32,
                     3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", ready31),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),32));
+                    (new Item.Properties()).tab(TestMod.creativeTab),32));
     public static final RegistryObject<ModSwordItem> MIXED31_SWORD = Registration.ITEMS.register("31_sword", () -> new ModSwordItem(ModItemTier.MIXED31,
                     3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", ready32),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),31));
+                    (new Item.Properties()).tab(TestMod.creativeTab),31));
     public static final RegistryObject<ModSwordItem> MIXED30_SWORD = Registration.ITEMS.register("30_sword", () -> new ModSwordItem(ModItemTier.MIXED30,
                     3,                                     // DAMAGE   (see tier in ModItemTier)
                     readySpeed("sword", ready30),           // READY SPEED TODO:(replace with dynamic value)
-                    (new Item.Properties()).tab(ItemGroup.TAB_COMBAT),30));
+                    (new Item.Properties()).tab(TestMod.creativeTab),30));
 }

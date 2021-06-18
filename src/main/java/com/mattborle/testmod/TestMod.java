@@ -1,9 +1,11 @@
 package com.mattborle.testmod;
 
+import com.mattborle.testmod.data.client.CreativeTab;
 import com.mattborle.testmod.setup.Registration;
 import com.mattborle.testmod.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -29,6 +31,7 @@ public class TestMod
     public static final String MOD_ID = "testmod";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final ItemGroup creativeTab = new CreativeTab();
 
     public TestMod() {
         Registration.register();

@@ -21,9 +21,9 @@ public class ModAxeItem extends AxeItem {
 
     int mix = -1; // mix number (example: 21 - Zeocite,Nepentine)
     String repairItem = "\u00A7c\u00A7oInvalid item mix, repair item unknown!\u00A7f";
-    char one;
-    char two;
-    char three;
+    char one = 'n';
+    char two = 'n';
+    char thr = 'n';
 
     public ModAxeItem(IItemTier tier, float damage, float readySpeed, Properties properties, int mix) {
         // runs once* on init.
@@ -31,38 +31,28 @@ public class ModAxeItem extends AxeItem {
         this.mix = mix;
         try{
             one = Integer.toString(mix).charAt(0);
-            two = Integer.toString(mix).charAt(1);
-            three = Integer.toString(mix).charAt(2);
+            if(Integer.toString(mix).length() > 1) two = Integer.toString(mix).charAt(1);
+            if(Integer.toString(mix).length() > 2) thr = Integer.toString(mix).charAt(2);
+        }
+        catch(Exception e){}
+        try{
             // MIXED MATERIALS:
             // Set correct info item based on item's mix
-            if(one == '3' || two == '3' || three == '3'){ // if there is Kaindrite, overwrite. This is an exceptional state. Only a pure Kaindrite item should be repaired with Kaindrite.
+            if(one == '3' || two == '3' || thr == '3'){ // if there is Kaindrite, overwrite. This is an exceptional state. Only a pure Kaindrite item should be repaired with Kaindrite.
                 repairItem = "\u00A71\u00A7oKaindrite\u00A7f";
             }
-            if(one == '0' || two == '0' || three == '0'){ // if there is Epidaxite
+            if(one == '0' || two == '0' || thr == '0'){ // if there is Epidaxite
                 repairItem = "\u00A7d\u00A7oEpidaxite\u00A7f";
             }
-            if(one == '1' || two == '1' || three == '1'){ // if there is Nepentine, overwrite.
+            if(one == '1' || two == '1' || thr == '1'){ // if there is Nepentine, overwrite.
                 repairItem = "\u00A7a\u00A7oNepentine\u00A7f";
             }
-            if(one == '2' || two == '2' || three == '2'){ // if there is Zeocite, overwrite.
+            if(one == '2' || two == '2' || thr == '2'){ // if there is Zeocite, overwrite.
                 repairItem = "\u00A76\u00A7oZeocite\u00A7f";
             }
         }
-        catch(IndexOutOfBoundsException e) {
-            // SINGLE MATERIAL:
-            // Set correct info item based on item's material
-            if(one == '3'){ // if there is Kaindrite, overwrite. This is an exceptional state. Only a pure Kaindrite item should be repaired with Kaindrite.
-                repairItem = "\u00A71\u00A7oKaindrite\u00A7f";
-            }
-            if (one == '0') { // if there is Epidaxite
-                repairItem = "\u00A7d\u00A7oEpidaxite\u00A7f";
-            }
-            if (one == '1') { // if there is Nepentine, overwrite.
-                repairItem = "\u00A7a\u00A7oNepentine\u00A7f";
-            }
-            if (one == '2') { // if there is Zeocite, overwrite.
-                repairItem = "\u00A76\u00A7oZeocite\u00A7f";
-            }
+        catch(Exception e) {
+            System.out.println(e);
         }
     }
 

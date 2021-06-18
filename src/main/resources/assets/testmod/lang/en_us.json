@@ -21,6 +21,8 @@
 
 
 
+  "itemGroup.testmod": "Gem Verity",
+
 
   "item.testmod.epidaxite": "Epidaxite",
   "block.testmod.epidaxite_ore": "Epidaxite Ore",
@@ -31,6 +33,10 @@
   "item.testmod.epidaxite_shovel": "Epidaxite Shovel",
   "item.testmod.epidaxite_sword": "Epidaxite Sword",
   "item.testmod.epidaxite_hoe": "Epidaxite Hoe",
+  "item.testmod.epidaxite_helmet": "Epidaxite Helmet",
+  "item.testmod.epidaxite_chestplate": "Epidaxite Chestplate",
+  "item.testmod.epidaxite_leggings": "Epidaxite Leggings",
+  "item.testmod.epidaxite_boots": "Epidaxite Boots",
 
   "item.testmod.nepentine": "Nepentine",
   "block.testmod.nepentine_ore": "Nepentine Ore",
@@ -41,6 +47,10 @@
   "item.testmod.nepentine_shovel": "Nepentine Shovel",
   "item.testmod.nepentine_sword": "Nepentine Sword",
   "item.testmod.nepentine_hoe": "Nepentine Hoe",
+  "item.testmod.nepentine_helmet": "Nepentine Helmet",
+  "item.testmod.nepentine_chestplate": "Nepentine Chestplate",
+  "item.testmod.nepentine_leggings": "Nepentine Leggings",
+  "item.testmod.nepentine_boots": "Nepentine Boots",
 
   "item.testmod.zeocite": "Zeocite",
   "block.testmod.zeocite_ore": "Zeocite Ore",
@@ -51,6 +61,10 @@
   "item.testmod.zeocite_shovel": "Zeocite Shovel",
   "item.testmod.zeocite_sword": "Zeocite Sword",
   "item.testmod.zeocite_hoe": "Zeocite Hoe",
+  "item.testmod.zeocite_helmet": "Zeocite Helmet",
+  "item.testmod.zeocite_chestplate": "Zeocite Chestplate",
+  "item.testmod.zeocite_leggings": "Zeocite Leggings",
+  "item.testmod.zeocite_boots": "Zeocite Boots",
 
   "item.testmod.kaindrite": "Kaindrite",
   "block.testmod.kaindrite_ore": "Kaindrite Ore",
@@ -61,6 +75,10 @@
   "item.testmod.kaindrite_shovel": "Kaindrite Shovel",
   "item.testmod.kaindrite_sword": "Kaindrite Sword",
   "item.testmod.kaindrite_hoe": "Kaindrite Hoe",
+  "item.testmod.kaindrite_helmet": "Kaindrite Helmet",
+  "item.testmod.kaindrite_chestplate": "Kaindrite Chestplate",
+  "item.testmod.kaindrite_leggings": "Kaindrite Leggings",
+  "item.testmod.kaindrite_boots": "Kaindrite Boots",
 
 
 

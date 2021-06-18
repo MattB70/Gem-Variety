@@ -1,11 +1,16 @@
 package com.mattborle.testmod.data.client;
 
 import com.mattborle.testmod.TestMod;
+import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.item.Item;
+import net.minecraft.util.registry.Registry;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.RegistryObject;
 
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -22,58 +27,80 @@ public class ModItemModelProvider extends ItemModelProvider {
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
         // EPIDAXITE ===================================================================================================
+        builder(itemGenerated, "epidaxite");
         // Block
         withExistingParent("epidaxite_block", modLoc("block/epidaxite_block"));
         // Ore
         withExistingParent("epidaxite_ore", modLoc("block/epidaxite_ore"));
         withExistingParent("nether_epidaxite_ore", modLoc("block/nether_epidaxite_ore"));
         // Tools
-        builder(itemGenerated, "epidaxite");
         builder(itemGenerated, "epidaxite_pickaxe");
         builder(itemGenerated, "epidaxite_axe");
         builder(itemGenerated, "epidaxite_shovel");
         builder(itemGenerated, "epidaxite_hoe");
         builder(itemGenerated, "epidaxite_sword");
+        // Armor
+        builder(itemGenerated, "epidaxite_helmet");
+        builder(itemGenerated, "epidaxite_chestplate");
+        builder(itemGenerated, "epidaxite_leggings");
+        builder(itemGenerated, "epidaxite_boots");
+        builder(itemGenerated, "epidaxite_layer_1");
+        builder(itemGenerated, "epidaxite_layer_2");
 
         // NEPENTINE ===================================================================================================
+        builder(itemGenerated, "nepentine");
         // Block
         withExistingParent("nepentine_block", modLoc("block/nepentine_block"));
         // Ore
         withExistingParent("nepentine_ore", modLoc("block/nepentine_ore"));
         withExistingParent("end_nepentine_ore", modLoc("block/end_nepentine_ore"));
         // Tools
-        builder(itemGenerated, "nepentine");
         builder(itemGenerated, "nepentine_pickaxe");
         builder(itemGenerated, "nepentine_axe");
         builder(itemGenerated, "nepentine_shovel");
         builder(itemGenerated, "nepentine_hoe");
         builder(itemGenerated, "nepentine_sword");
+        // Armor
+        builder(itemGenerated, "nepentine_helmet");
+        builder(itemGenerated, "nepentine_chestplate");
+        builder(itemGenerated, "nepentine_leggings");
+        builder(itemGenerated, "nepentine_boots");
 
         // ZEOCITE =====================================================================================================
+        builder(itemGenerated, "zeocite");
         // Block
         withExistingParent("zeocite_block", modLoc("block/zeocite_block"));
         // Ore
         withExistingParent("end_zeocite_ore", modLoc("block/end_zeocite_ore"));
         // Tools
-        builder(itemGenerated, "zeocite");
         builder(itemGenerated, "zeocite_pickaxe");
         builder(itemGenerated, "zeocite_axe");
         builder(itemGenerated, "zeocite_shovel");
         builder(itemGenerated, "zeocite_hoe");
         builder(itemGenerated, "zeocite_sword");
+        // Armor
+        builder(itemGenerated, "zeocite_helmet");
+        builder(itemGenerated, "zeocite_chestplate");
+        builder(itemGenerated, "zeocite_leggings");
+        builder(itemGenerated, "zeocite_boots");
 
         // KAINDRITE ===================================================================================================
+        builder(itemGenerated, "kaindrite");
         // Block
         withExistingParent("kaindrite_block", modLoc("block/kaindrite_block"));
         // Ore
         withExistingParent("nether_kaindrite_ore", modLoc("block/nether_kaindrite_ore"));
         // Tools
-        builder(itemGenerated, "kaindrite");
         builder(itemGenerated, "kaindrite_pickaxe");
         builder(itemGenerated, "kaindrite_axe");
         builder(itemGenerated, "kaindrite_shovel");
         builder(itemGenerated, "kaindrite_hoe");
         builder(itemGenerated, "kaindrite_sword");
+        // Armor
+        builder(itemGenerated, "kaindrite_helmet");
+        builder(itemGenerated, "kaindrite_chestplate");
+        builder(itemGenerated, "kaindrite_leggings");
+        builder(itemGenerated, "kaindrite_boots");
 
 
         // MIXED =======================================================================================================

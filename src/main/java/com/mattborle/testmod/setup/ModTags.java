@@ -45,6 +45,11 @@ public class ModTags {
         public static final ITag.INamedTag<Item> SHOVEL_EPIDAXITE = forge("shovel/epidaxite");
         public static final ITag.INamedTag<Item> HOE_EPIDAXITE = forge("hoe/epidaxite");
         public static final ITag.INamedTag<Item> SWORD_EPIDAXITE = forge("sword/epidaxite");
+            // ARMOR
+        public static final ITag.INamedTag<Item> HELMET_EPIDAXITE = forge("helmet/epidaxite");
+        public static final ITag.INamedTag<Item> CHESTPLATE_EPIDAXITE = forge("chestplate/epidaxite");
+        public static final ITag.INamedTag<Item> LEGGINGS_EPIDAXITE = forge("leggings/epidaxite");
+        public static final ITag.INamedTag<Item> BOOTS_EPIDAXITE = forge("boots/epidaxite");
 
         // NEPENTINE ===================================================================================================
         // ORE
@@ -60,6 +65,11 @@ public class ModTags {
         public static final ITag.INamedTag<Item> SHOVEL_NEPENTINE = forge("shovel/nepentine");
         public static final ITag.INamedTag<Item> HOE_NEPENTINE = forge("hoe/nepentine");
         public static final ITag.INamedTag<Item> SWORD_NEPENTINE = forge("sword/nepentine");
+        // ARMOR
+        public static final ITag.INamedTag<Item> HELMET_NEPENTINE = forge("helmet/nepentine");
+        public static final ITag.INamedTag<Item> CHESTPLATE_NEPENTINE = forge("chestplate/nepentine");
+        public static final ITag.INamedTag<Item> LEGGINGS_NEPENTINE = forge("leggings/nepentine");
+        public static final ITag.INamedTag<Item> BOOTS_NEPENTINE = forge("boots/nepentine");
 
         // ZEOCITE ===================================================================================================
         // ORE
@@ -75,6 +85,11 @@ public class ModTags {
         public static final ITag.INamedTag<Item> SHOVEL_ZEOCITE = forge("shovel/zeocite");
         public static final ITag.INamedTag<Item> HOE_ZEOCITE = forge("hoe/zeocite");
         public static final ITag.INamedTag<Item> SWORD_ZEOCITE = forge("sword/zeocite");
+        // ARMOR
+        public static final ITag.INamedTag<Item> HELMET_ZEOCITE = forge("helmet/zeocite");
+        public static final ITag.INamedTag<Item> CHESTPLATE_ZEOCITE = forge("chestplate/zeocite");
+        public static final ITag.INamedTag<Item> LEGGINGS_ZEOCITE = forge("leggings/zeocite");
+        public static final ITag.INamedTag<Item> BOOTS_ZEOCITE = forge("boots/zeocite");
 
         // KAINDRITE ===================================================================================================
         // ORE
@@ -90,6 +105,11 @@ public class ModTags {
         public static final ITag.INamedTag<Item> SHOVEL_KAINDRITE = forge("shovel/kaindrite");
         public static final ITag.INamedTag<Item> HOE_KAINDRITE = forge("hoe/kaindrite");
         public static final ITag.INamedTag<Item> SWORD_KAINDRITE = forge("sword/kaindrite");
+        // ARMOR
+        public static final ITag.INamedTag<Item> HELMET_KAINDRITE = forge("helmet/kaindrite");
+        public static final ITag.INamedTag<Item> CHESTPLATE_KAINDRITE = forge("chestplate/kaindrite");
+        public static final ITag.INamedTag<Item> LEGGINGS_KAINDRITE = forge("leggings/kaindrite");
+        public static final ITag.INamedTag<Item> BOOTS_KAINDRITE = forge("boots/kaindrite");
 
 
 

@@ -21,8 +21,8 @@ public class ModHoeItem extends HoeItem {
 
     int mix = -1; // mix number (example: 21 - Zeocite,Nepentine)
     String repairItem = "\u00A7c\u00A7oInvalid item mix, repair item unknown!\u00A7f";
-    char one;
-    char two;
+    char one = 'n';
+    char two = 'n';
 
     public ModHoeItem(IItemTier tier, int damage, float readySpeed, Properties properties, int mix) {
         // runs once* on init.
@@ -30,7 +30,10 @@ public class ModHoeItem extends HoeItem {
         this.mix = mix;
         try{
             one = Integer.toString(mix).charAt(0);
-            two = Integer.toString(mix).charAt(1);
+            if(Integer.toString(mix).length() > 1) two = Integer.toString(mix).charAt(1);
+        }
+        catch(Exception e){}
+        try{
             // MIXED MATERIALS:
             // Set correct info item based on item's mix
             if(one == '3' || two == '3'){ // if there is Kaindrite, overwrite. This is an exceptional state. Only a pure Kaindrite item should be repaired with Kaindrite.
@@ -46,21 +49,8 @@ public class ModHoeItem extends HoeItem {
                 repairItem = "\u00A76\u00A7oZeocite\u00A7f";
             }
         }
-        catch(IndexOutOfBoundsException e){
-            // SINGLE MATERIAL:
-            // Set correct info item based on item's material
-            if(one == '3'){ // if there is Kaindrite, overwrite. This is an exceptional state. Only a pure Kaindrite item should be repaired with Kaindrite.
-                repairItem = "\u00A71\u00A7oKaindrite\u00A7f";
-            }
-            if(one == '0'){ // if there is Epidaxite
-                repairItem = "\u00A7d\u00A7oEpidaxite\u00A7f";
-            }
-            if(one == '1'){ // if there is Nepentine, overwrite.
-                repairItem = "\u00A7a\u00A7oNepentine\u00A7f";
-            }
-            if(one == '2'){ // if there is Zeocite, overwrite.
-                repairItem = "\u00A76\u00A7oZeocite\u00A7f";
-            }
+        catch(Exception e) {
+            System.out.println(e);
         }
     }
 

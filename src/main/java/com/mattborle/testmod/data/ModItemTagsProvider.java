@@ -36,6 +36,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.SHOVEL_EPIDAXITE).add(ModItems.EPIDAXITE_SHOVEL.get());
         tag(ModTags.Items.HOE_EPIDAXITE).add(ModItems.EPIDAXITE_HOE.get());
         tag(ModTags.Items.SWORD_EPIDAXITE).add(ModItems.EPIDAXITE_SWORD.get());
+            // ARMOR
+        tag(ModTags.Items.HELMET_EPIDAXITE).add(ModItems.EPIDAXITE_HELMET.get());
+        tag(ModTags.Items.CHESTPLATE_EPIDAXITE).add(ModItems.EPIDAXITE_CHESTPLATE.get());
+        tag(ModTags.Items.LEGGINGS_EPIDAXITE).add(ModItems.EPIDAXITE_LEGGINGS.get());
+        tag(ModTags.Items.BOOTS_EPIDAXITE).add(ModItems.EPIDAXITE_BOOTS.get());
 
         // NEPENTINE ===================================================================================================
             // ORE
@@ -55,6 +60,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.SHOVEL_NEPENTINE).add(ModItems.NEPENTINE_SHOVEL.get());
         tag(ModTags.Items.HOE_NEPENTINE).add(ModItems.NEPENTINE_HOE.get());
         tag(ModTags.Items.SWORD_NEPENTINE).add(ModItems.NEPENTINE_SWORD.get());
+        // ARMOR
+        tag(ModTags.Items.HELMET_NEPENTINE).add(ModItems.NEPENTINE_HELMET.get());
+        tag(ModTags.Items.CHESTPLATE_NEPENTINE).add(ModItems.NEPENTINE_CHESTPLATE.get());
+        tag(ModTags.Items.LEGGINGS_NEPENTINE).add(ModItems.NEPENTINE_LEGGINGS.get());
+        tag(ModTags.Items.BOOTS_NEPENTINE).add(ModItems.NEPENTINE_BOOTS.get());
 
         // ZEOCITE =====================================================================================================
         // ORE
@@ -72,6 +82,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.SHOVEL_ZEOCITE).add(ModItems.ZEOCITE_SHOVEL.get());
         tag(ModTags.Items.HOE_ZEOCITE).add(ModItems.ZEOCITE_HOE.get());
         tag(ModTags.Items.SWORD_ZEOCITE).add(ModItems.ZEOCITE_SWORD.get());
+        // ARMOR
+        tag(ModTags.Items.HELMET_ZEOCITE).add(ModItems.ZEOCITE_HELMET.get());
+        tag(ModTags.Items.CHESTPLATE_ZEOCITE).add(ModItems.ZEOCITE_CHESTPLATE.get());
+        tag(ModTags.Items.LEGGINGS_ZEOCITE).add(ModItems.ZEOCITE_LEGGINGS.get());
+        tag(ModTags.Items.BOOTS_ZEOCITE).add(ModItems.ZEOCITE_BOOTS.get());
 
         // KAINDRITE ===================================================================================================
         // ORE
@@ -89,6 +104,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ModTags.Items.SHOVEL_KAINDRITE).add(ModItems.KAINDRITE_SHOVEL.get());
         tag(ModTags.Items.HOE_KAINDRITE).add(ModItems.KAINDRITE_HOE.get());
         tag(ModTags.Items.SWORD_KAINDRITE).add(ModItems.KAINDRITE_SWORD.get());
+        // ARMOR
+        tag(ModTags.Items.HELMET_KAINDRITE).add(ModItems.KAINDRITE_HELMET.get());
+        tag(ModTags.Items.CHESTPLATE_KAINDRITE).add(ModItems.KAINDRITE_CHESTPLATE.get());
+        tag(ModTags.Items.LEGGINGS_KAINDRITE).add(ModItems.KAINDRITE_LEGGINGS.get());
+        tag(ModTags.Items.BOOTS_KAINDRITE).add(ModItems.KAINDRITE_BOOTS.get());
 
 
 
