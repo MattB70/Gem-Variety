@@ -1,5 +1,6 @@
 package com.mattborle.testmod.setup;
 
+import com.mattborle.testmod.blocks.ZeoCoreBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -13,6 +14,14 @@ import net.minecraftforge.fml.RegistryObject;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+
+    // CRAFTED =========================================================================================================
+    public static final RegistryObject<ZeoCoreBlock> ZEO_CORE = register("zeo_core", () ->
+            new ZeoCoreBlock(AbstractBlock.Properties.of(Material.METAL)
+                    .strength(3, 10)
+                    .harvestTool(ToolType.PICKAXE)          // pickaxe tool
+                    .sound(SoundType.METAL)));
+
 
     // EPIDAXITE =======================================================================================================
     public static final RegistryObject<Block> EPIDAXITE_ORE = register("epidaxite_ore", () ->

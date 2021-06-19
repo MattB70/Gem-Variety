@@ -10,6 +10,8 @@ import net.minecraft.util.ResourceLocation;
 
 public class ModTags {
     public static final class Blocks {
+        public static final ITag.INamedTag<Block> ZEO_CORE = forge("blocks/zeo_core");
+
         public static final ITag.INamedTag<Block> ORES_EPIDAXITE = forge("ores/epidaxite");
         public static final ITag.INamedTag<Block> ORES_NETHER_EPIDAXITE = forge("ores/epidaxite");
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_EPIDAXITE = forge("storage_blocks/epidaxite");
@@ -31,6 +33,11 @@ public class ModTags {
     }
 
     public static final class Items {
+
+        // CRAFTED =====================================================================================================
+        public static final ITag.INamedTag<Item> ZEO_CORE = forge("blocks/zeo_core");
+
+
         // EPIDAXITE ===================================================================================================
             // ORE
         public static final ITag.INamedTag<Item> ORES_EPIDAXITE = forge("ores/epidaxite");

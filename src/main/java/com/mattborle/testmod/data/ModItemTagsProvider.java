@@ -18,6 +18,10 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     protected void registerTags() {
 
+        // CRAFTED =====================================================================================================
+        copy(ModTags.Blocks.ZEO_CORE, ModTags.Items.ZEO_CORE);
+
+
         // EPIDAXITE ===================================================================================================
             // ORE
         copy(ModTags.Blocks.ORES_EPIDAXITE, ModTags.Items.ORES_EPIDAXITE);

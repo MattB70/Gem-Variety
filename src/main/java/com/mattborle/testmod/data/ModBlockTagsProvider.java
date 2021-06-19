@@ -17,6 +17,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags() {
+
+        tag(ModTags.Blocks.ZEO_CORE).add(ModBlocks.ZEO_CORE.get());
+
         tag(ModTags.Blocks.ORES_EPIDAXITE).add(ModBlocks.EPIDAXITE_ORE.get());
         tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_EPIDAXITE);
         tag(ModTags.Blocks.ORES_NETHER_EPIDAXITE).add(ModBlocks.NETHER_EPIDAXITE_ORE.get());

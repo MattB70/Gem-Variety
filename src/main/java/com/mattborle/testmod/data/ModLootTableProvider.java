@@ -13,6 +13,7 @@ import net.minecraft.loot.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 
+
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
@@ -58,6 +59,8 @@ public class ModLootTableProvider extends LootTableProvider {
             dropSelf(ModBlocks.ZEOCITE_BLOCK.get());
 
             dropSelf(ModBlocks.KAINDRITE_BLOCK.get());
+
+            dropSelf(ModBlocks.ZEO_CORE.get());
 
         }
 

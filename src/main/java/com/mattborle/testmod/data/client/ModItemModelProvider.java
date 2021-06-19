@@ -26,6 +26,10 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
+        // CRAFTED =====================================================================================================
+        withExistingParent("zeo_core", modLoc("block/zeo_core"));
+
+
         // EPIDAXITE ===================================================================================================
         builder(itemGenerated, "epidaxite");
         // Block
